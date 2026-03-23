@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Healthcare AI Advisory — Saivai Group</title>
+  <meta name="description" content="Saivai Group's Healthcare AI Advisory services: AI education and training, AI Operations Audit, implementation retainer, and Fractional CAIO leadership for healthcare organizations." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ===== PAGE-SPECIFIC STYLES ===== */
+    .ai-hero {
+      background: linear-gradient(135deg, #0d1117 0%, #0D1B3E 50%, #0d1117 100%);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ai-hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(197,164,82,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .ai-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 900px) { .ai-hero-inner { grid-template-columns: 1fr; } }
+    .ai-hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .ai-hero-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .ai-hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    .ai-hero-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 12px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+    }
+    .ai-philosophy-bar {
+      background: var(--gold);
+      padding: 20px 0;
+      text-align: center;
+    }
+    .ai-philosophy-bar p {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #0d1117;
+      letter-spacing: 0.03em;
+    }
+
+    /* Track sections */
+    .track-section {
+      padding: 80px 0;
+    }
+    .track-section.dark {
+      background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 100%);
+    }
+    .track-section.light {
+      background: var(--gray-50);
+    }
+    .track-section.white {
+      background: var(--white);
+    }
+    .track-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: rgba(197,164,82,0.15);
+      border: 1px solid rgba(197,164,82,0.4);
+      color: var(--gold);
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .track-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .track-headline.light { color: #fff; }
+    .track-headline.dark { color: var(--navy); }
+    .track-sub {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      max-width: 680px;
+    }
+    .track-sub.light { color: rgba(255,255,255,0.7); }
+    .track-sub.dark { color: var(--gray-500); }
+
+    /* Training cards */
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 8px;
+    }
+    .training-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(197,164,82,0.2);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .training-card.on-light {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      box-shadow: 0 4px 20px rgba(13,27,62,0.07);
+    }
+    .training-icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .training-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .training-title.light { color: #fff; }
+    .training-title.dark { color: var(--navy); }
+    .training-audience {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .training-desc {
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+    .training-desc.light { color: rgba(255,255,255,0.65); }
+    .training-desc.dark { color: var(--gray-500); }
+    .cme-badge {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(74,222,128,0.12);
+      color: #4ade80;
+      border: 1px solid rgba(74,222,128,0.3);
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    /* Audit/Implementation ladder */
+    .ladder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0;
+      margin-top: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .ladder-step {
+      padding: 36px 28px;
+      position: relative;
+    }
+    .ladder-step:nth-child(1) { background: #0D1B3E; }
+    .ladder-step:nth-child(2) { background: #162447; }
+    .ladder-step:nth-child(3) { background: #1E3A5F; }
+    .ladder-step-num {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .ladder-step-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .ladder-step-investment {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .ladder-step-desc {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+    }
+    .ladder-step-list {
+      list-style: none;
+      margin-top: 12px;
+    }
+    .ladder-step-list li {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      padding: 4px 0;
+      padding-left: 16px;
+      position: relative;
+    }
+    .ladder-step-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+
+    /* CAIO section */
+    .caio-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    @media (max-width: 900px) { .caio-inner { grid-template-columns: 1fr; } }
+    .caio-role-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
+      border-top: 4px solid var(--gold);
+    }
+    .caio-role-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .caio-investment {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .caio-desc {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .caio-stakeholders {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .caio-stakeholder-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+      color: var(--navy);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    /* ===== AI READINESS ASSESSMENT TOOL ===== */
+    .assessment-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #0D1B3E 0%, #0d1117 100%);
+    }
+    .assessment-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .assessment-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(197,164,82,0.25);
+      border-radius: 16px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+    .assessment-progress {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 32px;
+    }
+    .progress-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      transition: background 0.3s;
+    }
+    .progress-dot.active { background: var(--gold); }
+    .progress-dot.done { background: rgba(197,164,82,0.5); }
+    .q-number {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .q-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 28px;
+    }
+    .q-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .q-option {
+      background: rgba(255,255,255,0.04);
+      border: 1.5px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 14px 18px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+    }
+    .q-option:hover {
+      border-color: var(--gold);
+      background: rgba(197,164,82,0.08);
+      color: #fff;
+    }
+    .q-option.selected {
+      border-color: var(--gold);
+      background: rgba(197,164,82,0.12);
+      color: #fff;
+    }
+    .assessment-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 28px;
+    }
+    .assessment-btn {
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.2s;
+    }
+    .assessment-btn.primary {
+      background: var(--gold);
+      color: #0d1117;
+      border: none;
+    }
+    .assessment-btn.primary:hover { background: var(--gold-light); }
+    .assessment-btn.secondary {
+      background: transparent;
+      color: rgba(255,255,255,0.5);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .assessment-btn.secondary:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+    .assessment-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+    /* Results */
+    .result-card {
+      display: none;
+      text-align: center;
+    }
+    .result-card.active { display: block; }
+    .result-score-ring {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .result-score-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold);
+    }
+    .result-profile-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .result-profile-desc {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .result-recommendation {
+      background: rgba(197,164,82,0.1);
+      border: 1px solid rgba(197,164,82,0.3);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .result-rec-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .result-rec-text {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+    .result-disclaimer {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 16px;
+      font-style: italic;
+    }
+
+    /* CTA section */
+    .ai-cta-section {
+      padding: 80px 0;
+      background: var(--white);
+      text-align: center;
+    }
+    .ai-cta-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .ai-cta-sub {
+      font-size: 1rem;
+      color: var(--gray-500);
+      line-height: 1.8;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+    .ai-cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img
+          src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+          alt="Saivai Group"
+          class="nav-logo-img"
+        />
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#async-advisory" class="nav-link">Async Advisory</a></li>
+        <li><a href="ai-advisory.html" class="nav-link" style="color:var(--gold);">AI Advisory</a></li>
+        <li><a href="leadership-coaching.html" class="nav-link">Leadership Coaching</a></li>
+        <li><a href="engage.html" class="nav-link">Engage</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="ai-hero">
+    <div class="container">
+      <div class="ai-hero-inner">
+        <div>
+          <p class="ai-hero-eyebrow">Healthcare AI Advisory · Saivai Group</p>
+          <h1 class="ai-hero-headline">
+            AI That Works<br />
+            <span style="color:var(--gold);">For Your Organization.</span><br />
+            Not Against It.
+          </h1>
+          <p class="ai-hero-sub">
+            Healthcare AI is not a technology problem — it is a leadership problem. Saivai Group brings
+            physician executive leadership to every stage of your AI journey: from readiness assessment
+            and governance design, through implementation and training, to Fractional CAIO leadership
+            that embeds AI strategy across your entire organization.
+          </p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;">
+            <a href="#assessment" class="btn-primary">Take the AI Readiness Assessment →</a>
+            <a href="index.html#contact" class="btn-ghost-navy">Inquire About AI Advisory</a>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/lwNIXKteHLtmLeWi.png"
+            alt="Physician executive presenting AI analytics to healthcare leadership team"
+            class="ai-hero-img"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PHILOSOPHY BAR ===== -->
+  <div class="ai-philosophy-bar">
+    <p>The Saivai Way: Human-in-the-Loop AI · Evidence-Based Governance · Culture-First Transformation</p>
+  </div>
+
+  <!-- ===== TRACK 1: AI EDUCATION & TRAINING ===== -->
+  <section class="track-section dark" id="training">
+    <div class="container">
+      <div class="track-label">Track 1</div>
+      <h2 class="track-headline light">AI Education &amp; Training</h2>
+      <p class="track-sub light">
+        Sustainable AI adoption begins with organizational literacy. Saivai Group delivers bespoke,
+        in-person and virtual AI training across all levels of your organization — from the boardroom
+        to the bedside — grounded in the Human-in-the-Loop philosophy and the Saivai Way model.
+      </p>
+
+      <div class="training-grid">
+        <div class="training-card">
+          <div class="training-icon">🏛️</div>
+          <div class="training-title light">AI Board Governance Training</div>
+          <div class="training-audience">Board of Directors · Trustees</div>
+          <div class="training-desc light">
+            Fiduciary AI literacy for board members: risk frameworks, liability considerations,
+            AI policy oversight, vendor due diligence, and governance committee design.
+            Includes quarterly AI update sessions and board presentation support.
+          </div>
+        </div>
+        <div class="training-card">
+          <div class="training-icon">🧠</div>
+          <div class="training-title light">AI Leadership Training</div>
+          <div class="training-audience">C-Suite · VPs · Directors · Managers · Physician Leaders</div>
+          <div class="training-desc light">
+            Strategic AI literacy for organizational leaders: what AI can and cannot do,
+            how to lead AI transformation, ROI evaluation, vendor assessment, and responsible
+            deployment in clinical and operational settings. In-person and virtual formats available.
+          </div>
+        </div>
+        <div class="training-card">
+          <div class="training-icon">🩺</div>
+          <div class="training-title light">Clinical AI Training</div>
+          <div class="training-audience">Physicians · APPs · Nurses · MAs · All Clinical Staff</div>
+          <div class="training-desc light">
+            Practical, workflow-relevant AI education for clinical teams: AI-assisted documentation,
+            diagnostic AI tools, patient safety considerations, and responsible clinical AI use.
+            Designed for real-world adoption at every level of the care team.
+          </div>
+          <div class="cme-badge">CME Integration Available</div>
+        </div>
+        <div class="training-card">
+          <div class="training-icon">⚙️</div>
+          <div class="training-title light">AI Business Operations Training</div>
+          <div class="training-audience">Practice Managers · COOs · Revenue Cycle · HR · Compliance</div>
+          <div class="training-desc light">
+            Operational AI literacy for administrative and business leaders: revenue cycle AI,
+            scheduling automation, prior authorization, billing optimization, and HR applications.
+            Focused on measurable productivity and margin improvement.
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:32px;background:rgba(197,164,82,0.08);border:1px solid rgba(197,164,82,0.25);border-radius:10px;padding:20px 24px;">
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.75);line-height:1.75;">
+          <strong style="color:var(--gold);">The Saivai Way:</strong> All training sessions are bespoke — designed around your organization's culture,
+          risk tolerance, and current AI maturity. We do not deliver generic slide decks. Every session is
+          purpose-built to increase appropriate AI utilization, decrease organizational risk, enhance user
+          productivity, and demonstrate a measurable ROI with increased profit margin for each service line or department.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRACK 2: AUDIT & IMPLEMENTATION ===== -->
+  <section class="track-section white" id="audit">
+    <div class="container">
+      <div class="track-label" style="background:rgba(13,27,62,0.08);border-color:rgba(13,27,62,0.2);color:var(--navy);">Track 2</div>
+      <h2 class="track-headline dark">AI Operations Audit &amp; Implementation</h2>
+      <p class="track-sub dark">
+        Before deploying AI, you need to know where you are. The Saivai AI Operations Audit is a
+        structured, physician-led assessment that maps your current workflows, identifies the highest-ROI
+        AI opportunities, and delivers a board-ready roadmap — in two weeks.
+      </p>
+
+      <div class="ladder">
+        <div class="ladder-step">
+          <div class="ladder-step-num">Step 01</div>
+          <div class="ladder-step-title">AI Operations Audit</div>
+          <div class="ladder-step-investment">Fixed-Fee Engagement · Starting at $15,000</div>
+          <div class="ladder-step-desc">
+            A comprehensive 2-week workflow assessment covering clinical operations, revenue cycle,
+            administrative functions, and technology infrastructure. Delivered as a board-ready
+            executive report with a prioritized AI use-case matrix and 90-day implementation roadmap.
+          </div>
+          <ul class="ladder-step-list">
+            <li>Current-state workflow mapping</li>
+            <li>AI maturity scoring</li>
+            <li>Top 3–5 ROI opportunity identification</li>
+            <li>Governance readiness assessment</li>
+            <li>Board-ready executive readout</li>
+          </ul>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-step-num">Step 02</div>
+          <div class="ladder-step-title">AI Implementation Retainer</div>
+          <div class="ladder-step-investment">Monthly Retainer · $10,000–$25,000/month</div>
+          <div class="ladder-step-desc">
+            Post-audit implementation support: build, deploy, and optimize AI agents and workflows
+            across your highest-priority use cases. Ongoing oversight, vendor coordination, staff
+            training integration, and performance measurement.
+          </div>
+          <ul class="ladder-step-list">
+            <li>Prior authorization automation</li>
+            <li>Scheduling &amp; patient flow AI</li>
+            <li>Clinical documentation AI</li>
+            <li>Revenue cycle optimization</li>
+            <li>Performance reporting &amp; ROI tracking</li>
+          </ul>
+        </div>
+        <div class="ladder-step">
+          <div class="ladder-step-num">Step 03</div>
+          <div class="ladder-step-title">Sustained AI Leadership</div>
+          <div class="ladder-step-investment">Fractional CAIO or Retained AI Advisor</div>
+          <div class="ladder-step-desc">
+            For organizations ready to embed AI leadership at the executive level — either as a
+            Fractional Chief AI Officer working across the organization, or as a Retained AI Strategic
+            Advisor supporting the CEO and Board on an ongoing basis.
+          </div>
+          <ul class="ladder-step-list">
+            <li>AI governance &amp; policy stewardship</li>
+            <li>Ongoing education at all levels</li>
+            <li>Board presentations &amp; updates</li>
+            <li>Vendor oversight &amp; innovation scouting</li>
+            <li>Culture-first AI transformation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRACK 3: FRACTIONAL CAIO ===== -->
+  <section class="track-section light" id="caio">
+    <div class="container">
+      <div class="track-label" style="background:rgba(13,27,62,0.08);border-color:rgba(13,27,62,0.2);color:var(--navy);">Track 3</div>
+      <h2 class="track-headline dark">Fractional &amp; Retained AI Leadership</h2>
+      <p class="track-sub dark">
+        Two distinct engagement models for organizations that need ongoing AI leadership — one embedded
+        across the organization, one focused at the CEO and Board level.
+      </p>
+
+      <div class="caio-inner">
+        <div>
+          <div class="caio-role-card">
+            <div class="caio-role-title">Fractional Chief AI Officer (CAIO)</div>
+            <div class="caio-investment">Investment: $5,000–$15,000/month · Inquiry-Based Scoping</div>
+            <div class="caio-desc">
+              A hands-on, embedded AI leadership role working across your entire organization under
+              the direction of the CEO and Board. The Fractional CAIO establishes AI governance
+              appropriate to your organization's culture and risk tolerance, develops and delivers
+              AI education at all levels, leads strategic AI planning, and coordinates closely with
+              all key organizational stakeholders.
+            </div>
+            <div class="caio-desc">
+              Protects the organization by establishing core criteria and guardrails for introducing
+              new AI innovation — leveraging the Saivai Way model and taking into consideration the
+              CEO and Board's degree of AI adoption aggressiveness, their position on the standard
+              adoption curve, risk tolerance, readiness score, and willingness to lead and fully
+              support an AI transformation.
+            </div>
+            <p style="font-size:0.8rem;font-weight:700;color:var(--navy);margin-bottom:10px;">Works directly with:</p>
+            <div class="caio-stakeholders">
+              <span class="caio-stakeholder-tag">CEO</span>
+              <span class="caio-stakeholder-tag">Board of Directors</span>
+              <span class="caio-stakeholder-tag">CTO / CIO</span>
+              <span class="caio-stakeholder-tag">COO</span>
+              <span class="caio-stakeholder-tag">VP of HR</span>
+              <span class="caio-stakeholder-tag">CQO</span>
+              <span class="caio-stakeholder-tag">CMO (Medical)</span>
+              <span class="caio-stakeholder-tag">CMO (Marketing)</span>
+              <span class="caio-stakeholder-tag">CSO</span>
+              <span class="caio-stakeholder-tag">Compliance / Legal / Risk</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="caio-role-card" style="margin-bottom:24px;">
+            <div class="caio-role-title">Retained AI Strategic Advisor</div>
+            <div class="caio-investment">CEO &amp; Board Support · Inquiry-Based</div>
+            <div class="caio-desc">
+              A lighter-touch ongoing strategic role focused at the CEO and Board level — providing
+              AI landscape intelligence, governance advisory, and board presentation support on a
+              regular cadence.
+            </div>
+            <ul style="list-style:none;margin-top:4px;">
+              <li style="font-size:0.875rem;color:var(--gray-500);padding:5px 0;padding-left:16px;position:relative;">
+                <span style="position:absolute;left:0;color:var(--gold);">→</span>
+                Bi-weekly strategy sessions with CEO
+              </li>
+              <li style="font-size:0.875rem;color:var(--gray-500);padding:5px 0;padding-left:16px;position:relative;">
+                <span style="position:absolute;left:0;color:var(--gold);">→</span>
+                Monthly brief strategy sessions with Board
+              </li>
+              <li style="font-size:0.875rem;color:var(--gray-500);padding:5px 0;padding-left:16px;position:relative;">
+                <span style="position:absolute;left:0;color:var(--gold);">→</span>
+                Quarterly AI updates &amp; Board training sessions
+              </li>
+              <li style="font-size:0.875rem;color:var(--gray-500);padding:5px 0;padding-left:16px;position:relative;">
+                <span style="position:absolute;left:0;color:var(--gold);">→</span>
+                AI landscape briefings &amp; competitive intelligence
+              </li>
+              <li style="font-size:0.875rem;color:var(--gray-500);padding:5px 0;padding-left:16px;position:relative;">
+                <span style="position:absolute;left:0;color:var(--gold);">→</span>
+                Policy &amp; governance advisory
+              </li>
+              <li style="font-size:0.875rem;color:var(--gray-500);padding:5px 0;padding-left:16px;position:relative;">
+                <span style="position:absolute;left:0;color:var(--gold);">→</span>
+                Board presentation development &amp; delivery
+              </li>
+            </ul>
+          </div>
+
+          <div style="background:var(--navy);border-radius:10px;padding:24px;">
+            <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">The Saivai Way — AI Governance Model</p>
+            <p style="font-size:0.875rem;color:rgba(255,255,255,0.7);line-height:1.75;">
+              Every AI governance framework we establish is calibrated to your organization's culture,
+              risk tolerance, and readiness — not a generic template. We use a proprietary criteria-based
+              model to determine where your organization is on the AI adoption curve and how best to
+              meet you where you are. This begins with our AI Readiness Assessment and deepens through
+              a comprehensive analysis once engaged.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI READINESS ASSESSMENT ===== -->
+  <section class="assessment-section" id="assessment">
+    <div class="container">
+      <div class="assessment-container">
+        <div style="text-align:center;">
+          <div class="track-label" style="margin-bottom:12px;">Interactive Tool</div>
+          <h2 class="track-headline light" style="text-align:center;">AI Readiness Assessment</h2>
+          <p class="track-sub light" style="text-align:center;margin:0 auto 8px;">
+            A preliminary self-assessment for CEOs and Board members. This tool helps you understand
+            where your organization stands on the AI adoption curve — and how Saivai Group can best
+            meet you where you are. Results are preliminary and informational; a comprehensive analysis
+            is conducted once engaged.
+          </p>
+        </div>
+
+        <div class="assessment-card" id="assessmentCard">
+          <div class="assessment-progress" id="progressDots"></div>
+
+          <!-- Questions will be rendered here -->
+          <div id="questionContainer"></div>
+
+          <div class="assessment-nav">
+            <button class="assessment-btn secondary" id="prevBtn" onclick="prevQuestion()" disabled>← Back</button>
+            <span id="questionCounter" style="font-size:0.8rem;color:rgba(255,255,255,0.4);"></span>
+            <button class="assessment-btn primary" id="nextBtn" onclick="nextQuestion()" disabled>Next →</button>
+          </div>
+
+          <!-- Results panel -->
+          <div class="result-card" id="resultCard">
+            <div class="result-score-ring">
+              <div class="result-score-num" id="resultScore">0</div>
+            </div>
+            <div class="result-profile-title" id="resultTitle"></div>
+            <div class="result-profile-desc" id="resultDesc"></div>
+            <div class="result-recommendation">
+              <div class="result-rec-label">Recommended Starting Point</div>
+              <div class="result-rec-text" id="resultRec"></div>
+            </div>
+            <a href="index.html#contact" class="btn-primary" style="display:inline-block;margin-bottom:16px;">
+              Discuss Your Results with Anthony →
+            </a>
+            <p class="result-disclaimer">
+              This assessment is a preliminary orientation tool only. Results are based on self-reported
+              responses and are intended to frame an initial conversation — not to constitute a formal
+              AI readiness evaluation. A comprehensive organizational assessment is conducted as part of
+              the Saivai AI Operations Audit engagement.
+            </p>
+            <button class="assessment-btn secondary" onclick="resetAssessment()" style="margin-top:16px;">
+              Retake Assessment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="ai-cta-section">
+    <div class="container">
+      <img
+        src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/kXWkRiLXkHyobxbT.png"
+        alt="Physician executive team — Saivai Group healthcare AI advisory"
+        style="width:100%;max-height:400px;object-fit:cover;object-position:center top;border-radius:12px;margin-bottom:48px;box-shadow:var(--shadow-lg);"
+      />
+      <h2 class="ai-cta-headline">Ready to Lead Your Organization's AI Transformation?</h2>
+      <p class="ai-cta-sub">
+        Saivai Group works with organizations navigating decisions with significant operational
+        or financial consequence. If that describes your situation, let's talk.
+      </p>
+      <div class="ai-cta-buttons">
+        <a href="#assessment" class="btn-primary">Take the AI Readiness Assessment</a>
+        <a href="index.html#contact" class="btn-ghost-navy">Inquire About AI Advisory</a>
+        <a href="index.html" class="btn-ghost-navy">← Return to Main Site</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+            alt="Saivai Group"
+            class="footer-logo"
+          />
+          <p class="footer-tagline">Healthcare AI Strategy · Governance · M&amp;A Advisory</p>
+          <p class="footer-legal" style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:8px;">
+            © 2026 Saivai Group LLC. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-col-title">AI Advisory</div>
+            <a href="#training" class="footer-link">AI Education &amp; Training</a>
+            <a href="#audit" class="footer-link">AI Operations Audit</a>
+            <a href="#caio" class="footer-link">Fractional CAIO</a>
+            <a href="#assessment" class="footer-link">AI Readiness Assessment</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Main Site</div>
+            <a href="index.html#services" class="footer-link">All Services</a>
+            <a href="index.html#about" class="footer-link">About Anthony</a>
+            <a href="engage.html" class="footer-link">Engagement Options</a>
+            <a href="index.html#contact" class="footer-link">Get Started</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Connect</div>
+            <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+            <a href="mailto:anthony@saivaigroup.com" class="footer-link">Email Anthony</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // ===== AI READINESS ASSESSMENT LOGIC =====
+    const questions = [
+      {
+        text: "How would you describe your organization's current relationship with AI?",
+        options: [
+          { text: "We have not seriously explored AI yet", score: 1 },
+          { text: "We are aware of AI but have not deployed anything formally", score: 2 },
+          { text: "We have piloted 1–2 AI tools with mixed results", score: 3 },
+          { text: "We have active AI deployments in at least one department", score: 4 },
+          { text: "AI is embedded in multiple workflows and we are scaling", score: 5 }
+        ]
+      },
+      {
+        text: "How does your leadership team currently view AI adoption?",
+        options: [
+          { text: "Significant skepticism or resistance at the top", score: 1 },
+          { text: "Curious but cautious — waiting to see what others do", score: 2 },
+          { text: "Supportive in principle but uncertain how to proceed", score: 3 },
+          { text: "Actively championing AI with budget allocated", score: 4 },
+          { text: "CEO and Board are fully aligned and driving AI transformation", score: 5 }
+        ]
+      },
+      {
+        text: "How would you characterize your organization's risk tolerance for new technology?",
+        options: [
+          { text: "Very conservative — we wait until technology is fully proven", score: 1 },
+          { text: "Conservative — we adopt after early adopters have validated", score: 2 },
+          { text: "Moderate — we are willing to pilot with appropriate safeguards", score: 3 },
+          { text: "Progressive — we move quickly when the ROI case is clear", score: 4 },
+          { text: "Aggressive — we aim to be first movers in our market", score: 5 }
+        ]
+      },
+      {
+        text: "Does your organization have a formal AI governance policy or committee?",
+        options: [
+          { text: "No — we have not addressed AI governance formally", score: 1 },
+          { text: "We are aware we need one but have not started", score: 2 },
+          { text: "We have informal guidelines but nothing formal", score: 3 },
+          { text: "We have a draft policy or committee in formation", score: 4 },
+          { text: "Yes — we have a formal AI governance framework in place", score: 5 }
+        ]
+      },
+      {
+        text: "How prepared is your clinical and administrative staff for AI integration?",
+        options: [
+          { text: "Not prepared — most staff are unfamiliar with AI tools", score: 1 },
+          { text: "Minimal awareness — some staff have used consumer AI tools", score: 2 },
+          { text: "Moderate — some departments are more ready than others", score: 3 },
+          { text: "Good — most staff are open and some have received training", score: 4 },
+          { text: "High — we have an active AI literacy program organization-wide", score: 5 }
+        ]
+      },
+      {
+        text: "What is your primary motivation for exploring AI advisory support?",
+        options: [
+          { text: "Competitive pressure — others in our market are moving", score: 2 },
+          { text: "Cost reduction — we need to improve operational efficiency", score: 3 },
+          { text: "Revenue growth — we see AI as a growth driver", score: 4 },
+          { text: "Risk management — we need governance before we deploy anything", score: 2 },
+          { text: "Strategic transformation — AI is central to our 3–5 year vision", score: 5 }
+        ]
+      },
+      {
+        text: "How would you describe your organization's data infrastructure?",
+        options: [
+          { text: "Fragmented — data is siloed across systems with no integration", score: 1 },
+          { text: "Basic — we have an EHR but limited data analytics capability", score: 2 },
+          { text: "Developing — we have some analytics but inconsistent data quality", score: 3 },
+          { text: "Solid — we have clean data and some reporting infrastructure", score: 4 },
+          { text: "Advanced — we have integrated data, analytics, and BI tools", score: 5 }
+        ]
+      }
+    ];
+
+    let currentQ = 0;
+    let answers = new Array(questions.length).fill(null);
+
+    function renderProgressDots() {
+      const container = document.getElementById('progressDots');
+      container.innerHTML = '';
+      questions.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'progress-dot';
+        if (i < currentQ) dot.classList.add('done');
+        if (i === currentQ) dot.classList.add('active');
+        container.appendChild(dot);
+      });
+    }
+
+    function renderQuestion() {
+      const q = questions[currentQ];
+      const container = document.getElementById('questionContainer');
+      container.innerHTML = `
+        <div class="q-number">Question ${currentQ + 1} of ${questions.length}</div>
+        <div class="q-text">${q.text}</div>
+        <div class="q-options">
+          ${q.options.map((opt, i) => `
+            <button class="q-option ${answers[currentQ] === i ? 'selected' : ''}"
+              onclick="selectOption(${i})">${opt.text}</button>
+          `).join('')}
+        </div>
+      `;
+      document.getElementById('questionCounter').textContent = `${currentQ + 1} / ${questions.length}`;
+      document.getElementById('prevBtn').disabled = currentQ === 0;
+      document.getElementById('nextBtn').disabled = answers[currentQ] === null;
+      document.getElementById('nextBtn').textContent = currentQ === questions.length - 1 ? 'See My Results →' : 'Next →';
+      renderProgressDots();
+    }
+
+    function selectOption(optionIndex) {
+      answers[currentQ] = optionIndex;
+      document.querySelectorAll('.q-option').forEach((btn, i) => {
+        btn.classList.toggle('selected', i === optionIndex);
+      });
+      document.getElementById('nextBtn').disabled = false;
+    }
+
+    function nextQuestion() {
+      if (currentQ < questions.length - 1) {
+        currentQ++;
+        renderQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQ > 0) {
+        currentQ--;
+        renderQuestion();
+      }
+    }
+
+    function showResults() {
+      const totalScore = answers.reduce((sum, answerIdx, qIdx) => {
+        return sum + (answerIdx !== null ? questions[qIdx].options[answerIdx].score : 0);
+      }, 0);
+      const maxScore = questions.length * 5;
+      const percentage = Math.round((totalScore / maxScore) * 100);
+
+      let profile, desc, rec;
+      if (percentage <= 30) {
+        profile = "AI Awareness Stage";
+        desc = "Your organization is in the early awareness phase of AI adoption. This is a critical moment — the decisions you make now about governance, culture, and strategy will determine whether your AI journey succeeds or stalls. The good news: starting with the right foundation is far more valuable than starting fast.";
+        rec = "Begin with the Saivai AI Operations Audit to establish a clear baseline and roadmap. Pair this with AI Board Governance Training to ensure leadership alignment before any deployment decisions are made.";
+      } else if (percentage <= 50) {
+        profile = "AI Exploration Stage";
+        desc = "Your organization understands the importance of AI and is beginning to explore options, but has not yet established the governance, training, or infrastructure needed for sustainable deployment. You are at the most important inflection point — where organizations either build a strong foundation or accumulate costly technical and cultural debt.";
+        rec = "The AI Operations Audit will clarify your highest-ROI opportunities and governance gaps. AI Leadership Training for your C-suite and directors will accelerate alignment and reduce resistance before implementation begins.";
+      } else if (percentage <= 70) {
+        profile = "AI Activation Stage";
+        desc = "Your organization has meaningful AI momentum — leadership is engaged, some deployments are underway, and the culture is open to transformation. The primary risk at this stage is fragmented governance and uneven staff readiness creating liability exposure or suboptimal ROI.";
+        rec = "An AI Operations Audit will identify gaps in your current deployments and governance posture. Clinical AI Training and a formal governance framework will protect your organization while accelerating the ROI from existing and future deployments.";
+      } else if (percentage <= 85) {
+        profile = "AI Integration Stage";
+        desc = "Your organization is ahead of most healthcare peers in AI maturity. You have active deployments, leadership alignment, and a culture that supports AI adoption. The challenge now is scaling intelligently — ensuring governance keeps pace with deployment, and that AI literacy reaches every level of the organization.";
+        rec = "A Fractional CAIO engagement or Retained AI Strategic Advisor relationship would provide the sustained executive-level leadership needed to scale your AI program responsibly. Bespoke training programs will close remaining literacy gaps across clinical and administrative teams.";
+      } else {
+        profile = "AI Leadership Stage";
+        desc = "Your organization is operating at the frontier of healthcare AI adoption. You have the infrastructure, culture, and leadership alignment to move aggressively — and the primary need is sustained executive-level AI leadership to govern, scale, and innovate at the pace your organization is capable of.";
+        rec = "A Fractional CAIO engagement would embed the AI leadership capacity needed to sustain your momentum, govern emerging risks, and position your organization as a market leader in AI-enabled healthcare delivery.";
+      }
+
+      document.getElementById('questionContainer').style.display = 'none';
+      document.getElementById('prevBtn').style.display = 'none';
+      document.getElementById('nextBtn').style.display = 'none';
+      document.getElementById('questionCounter').style.display = 'none';
+      document.getElementById('progressDots').style.display = 'none';
+
+      document.getElementById('resultScore').textContent = percentage + '%';
+      document.getElementById('resultTitle').textContent = profile;
+      document.getElementById('resultDesc').textContent = desc;
+      document.getElementById('resultRec').textContent = rec;
+      document.getElementById('resultCard').classList.add('active');
+    }
+
+    function resetAssessment() {
+      currentQ = 0;
+      answers = new Array(questions.length).fill(null);
+      document.getElementById('questionContainer').style.display = '';
+      document.getElementById('prevBtn').style.display = '';
+      document.getElementById('nextBtn').style.display = '';
+      document.getElementById('questionCounter').style.display = '';
+      document.getElementById('progressDots').style.display = '';
+      document.getElementById('resultCard').classList.remove('active');
+      renderQuestion();
+    }
+
+    // Initialize
+    renderQuestion();
+  </script>
+</body>
+</html>

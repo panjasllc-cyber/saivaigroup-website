@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Strategy Call | Dr. Anthony Russell — Saivai Group</title>
+  <meta name="description" content="Schedule a 30-minute strategy call with Dr. Anthony Russell. No pitch. No proposal deck. Just a real conversation about your healthcare organization's most pressing challenges." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://saivaigroup.com/connect" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Schema: Person + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Healthcare Strategy Consultation",
+    "provider": {
+      "@type": "Person",
+      "name": "Dr. Anthony Russell",
+      "url": "https://saivaigroup.com",
+      "sameAs": ["https://www.linkedin.com/in/anthonywrussell/"]
+    },
+    "description": "30-minute strategy consultation with physician executive Dr. Anthony Russell covering healthcare AI, value-based care, and M&A advisory.",
+    "url": "https://saivaigroup.com/connect"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0D1B3E;
+      --navy-mid: #162040;
+      --navy-light: #1E2D52;
+      --gold: #C9A84C;
+      --gold-light: #E2C06A;
+      --white: #FFFFFF;
+      --gray-100: #F7F8FA;
+      --gray-300: #D1D5DB;
+      --gray-500: #6B7280;
+      --gray-700: #374151;
+      --teal: #0A7EA4;
+      --green: #10B981;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--navy);
+      color: var(--white);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    /* NAV */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(13, 27, 62, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+      padding: 16px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 36px; }
+    .nav-back { color: var(--gold); font-size: 14px; text-decoration: none; display: flex; align-items: center; gap: 6px; transition: opacity 0.2s; }
+    .nav-back:hover { opacity: 0.75; }
+    /* HERO */
+    .connect-hero {
+      padding: 120px 24px 60px;
+      text-align: center;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
+    }
+    .connect-eyebrow {
+      display: inline-block;
+      font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 16px;
+    }
+    .connect-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 700; line-height: 1.15;
+      color: var(--white); margin-bottom: 20px;
+    }
+    .connect-headline .gold { color: var(--gold); }
+    .connect-sub {
+      font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.75);
+      max-width: 640px; margin: 0 auto 40px;
+    }
+    /* SOURCE ATTRIBUTION CHIPS */
+    .source-section {
+      max-width: 700px; margin: 0 auto 48px;
+      padding: 0 24px;
+    }
+    .source-label {
+      font-size: 13px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      color: rgba(255,255,255,0.5); margin-bottom: 16px; text-align: center;
+    }
+    .source-chips {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+    }
+    .source-chip {
+      padding: 10px 18px; border-radius: 50px;
+      border: 1px solid rgba(201,168,76,0.3);
+      background: rgba(201,168,76,0.05);
+      color: rgba(255,255,255,0.8);
+      font-size: 14px; cursor: pointer;
+      transition: all 0.2s; user-select: none;
+    }
+    .source-chip:hover { border-color: var(--gold); background: rgba(201,168,76,0.12); }
+    .source-chip.selected {
+      border-color: var(--gold); background: rgba(201,168,76,0.18);
+      color: var(--gold); font-weight: 600;
+    }
+    .source-chip .chip-icon { margin-right: 6px; }
+    /* MAIN LAYOUT */
+    .connect-body {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px 80px;
+      display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: start;
+    }
+    @media (max-width: 900px) {
+      .connect-body { grid-template-columns: 1fr; gap: 40px; }
+    }
+    /* FORM PANEL */
+    .form-panel {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px; padding: 36px;
+    }
+    .form-title {
+      font-family: var(--font-serif); font-size: 24px; font-weight: 700;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .form-sub { font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 28px; line-height: 1.6; }
+    .form-group { margin-bottom: 20px; }
+    .form-label {
+      display: block; font-size: 13px; font-weight: 600;
+      color: rgba(255,255,255,0.7); margin-bottom: 8px; letter-spacing: 0.3px;
+    }
+    .form-label .required { color: var(--gold); margin-left: 2px; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%; padding: 12px 16px;
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px; color: var(--white); font-family: var(--font-sans); font-size: 15px;
+      transition: border-color 0.2s, background 0.2s; outline: none;
+    }
+    .form-input::placeholder, .form-textarea::placeholder { color: rgba(255,255,255,0.3); }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--gold); background: rgba(201,168,76,0.06);
+    }
+    .form-select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A84C' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; }
+    .form-select option { background: var(--navy-mid); color: var(--white); }
+    .form-textarea { min-height: 100px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+    .form-submit {
+      width: 100%; padding: 16px 24px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      border: none; border-radius: 8px; cursor: pointer;
+      font-family: var(--font-sans); font-size: 16px; font-weight: 700;
+      color: var(--navy); letter-spacing: 0.3px;
+      transition: transform 0.2s, box-shadow 0.2s; margin-top: 8px;
+    }
+    .form-submit:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(201,168,76,0.35); }
+    .form-submit:active { transform: translateY(0); }
+    .form-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .form-privacy {
+      font-size: 12px; color: rgba(255,255,255,0.4); text-align: center; margin-top: 12px; line-height: 1.5;
+    }
+    /* SUCCESS STATE */
+    .success-panel {
+      display: none; text-align: center; padding: 48px 24px;
+    }
+    .success-icon { font-size: 56px; margin-bottom: 20px; }
+    .success-title {
+      font-family: var(--font-serif); font-size: 28px; font-weight: 700;
+      color: var(--white); margin-bottom: 12px;
+    }
+    .success-sub { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 28px; }
+    .success-next { font-size: 14px; color: rgba(255,255,255,0.5); }
+    /* SIDEBAR */
+    .connect-sidebar { position: sticky; top: 100px; }
+    .sidebar-card {
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px; padding: 28px; margin-bottom: 20px;
+    }
+    .sidebar-photo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); margin-bottom: 16px; }
+    .sidebar-name { font-family: var(--font-serif); font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .sidebar-title { font-size: 13px; color: var(--gold); margin-bottom: 16px; }
+    .sidebar-bio { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 20px; }
+    .sidebar-creds { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .cred-badge {
+      padding: 4px 10px; border-radius: 4px;
+      background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.25);
+      font-size: 11px; font-weight: 600; color: var(--gold); letter-spacing: 0.5px;
+    }
+    .sidebar-promise {
+      padding: 16px; background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.2);
+      border-radius: 8px;
+    }
+    .promise-item {
+      display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 13px;
+      color: rgba(255,255,255,0.8); line-height: 1.5;
+    }
+    .promise-item:last-child { margin-bottom: 0; }
+    .promise-check { color: var(--green); font-size: 14px; margin-top: 1px; flex-shrink: 0; }
+    /* QR CARD */
+    .qr-card { text-align: center; }
+    .qr-card img { width: 140px; height: 140px; border-radius: 8px; margin: 0 auto 12px; }
+    .qr-card-label { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+    .qr-card-url { font-size: 12px; color: var(--gold); font-weight: 600; }
+    /* FOOTER */
+    .connect-footer {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 24px; text-align: center;
+      font-size: 12px; color: rgba(255,255,255,0.35);
+    }
+    .connect-footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    .connect-footer a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/SaivaiGrouplogoonblackbackground_1e407be6.png" alt="Saivai Group" />
+    </a>
+    <a href="index.html" class="nav-back">← Back to saivaigroup.com</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="connect-hero">
+    <div class="connect-eyebrow">Strategy Call Request</div>
+    <h1 class="connect-headline">
+      Let's Start With a<br /><span class="gold">30-Minute Conversation.</span>
+    </h1>
+    <p class="connect-sub">
+      No sales pitch. No proposal deck. Just an honest conversation about where your organization is and where you want to go — with someone who has been in your seat.
+    </p>
+  </div>
+
+  <!-- SOURCE ATTRIBUTION -->
+  <div class="source-section">
+    <div class="source-label">How did you hear about Dr. Russell?</div>
+    <div class="source-chips" id="sourceChips">
+      <div class="source-chip" data-source="live_presentation" onclick="selectSource(this)">
+        <span class="chip-icon">🎤</span> I was at the presentation today
+      </div>
+      <div class="source-chip" data-source="video_recording" onclick="selectSource(this)">
+        <span class="chip-icon">▶️</span> I watched the recording
+      </div>
+      <div class="source-chip" data-source="referral_friend" onclick="selectSource(this)">
+        <span class="chip-icon">🤝</span> A colleague or friend shared this
+      </div>
+      <div class="source-chip" data-source="linkedin" onclick="selectSource(this)">
+        <span class="chip-icon">💼</span> LinkedIn
+      </div>
+      <div class="source-chip" data-source="google_search" onclick="selectSource(this)">
+        <span class="chip-icon">🔍</span> Google Search
+      </div>
+      <div class="source-chip" data-source="other" onclick="selectSource(this)">
+        <span class="chip-icon">✦</span> Other
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN BODY -->
+  <div class="connect-body">
+    <!-- FORM -->
+    <div class="form-panel" id="formPanel">
+      <div class="form-title">Tell Me About Your Situation</div>
+      <p class="form-sub">The more context you share, the more useful our call will be. I read every submission personally.</p>
+
+      <form id="connectForm" onsubmit="handleSubmit(event)">
+        <!-- Hidden attribution fields -->
+        <input type="hidden" id="field_source" name="lead_source" value="" />
+        <input type="hidden" id="field_utm_source" name="utm_source" value="" />
+        <input type="hidden" id="field_utm_medium" name="utm_medium" value="" />
+        <input type="hidden" id="field_utm_campaign" name="utm_campaign" value="" />
+        <input type="hidden" id="field_utm_content" name="utm_content" value="" />
+        <input type="hidden" id="field_referrer" name="referrer" value="" />
+        <input type="hidden" id="field_landing_page" name="landing_page" value="" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">First Name <span class="required">*</span></label>
+            <input type="text" class="form-input" name="firstName" placeholder="Anthony" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Last Name <span class="required">*</span></label>
+            <input type="text" class="form-input" name="lastName" placeholder="Russell" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Work Email <span class="required">*</span></label>
+          <input type="email" class="form-input" name="email" placeholder="you@organization.com" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Organization Name <span class="required">*</span></label>
+          <input type="text" class="form-input" name="organization" placeholder="Your health system, group practice, or firm" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Your Title <span class="required">*</span></label>
+            <input type="text" class="form-input" name="title" placeholder="CEO, CMO, CFO..." required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Organization Type <span class="required">*</span></label>
+            <select class="form-select" name="orgType" required>
+              <option value="" disabled selected>Select type</option>
+              <option value="health_system">Health System / Hospital</option>
+              <option value="physician_group">Physician Group / Medical Group</option>
+              <option value="aco_ipa">ACO / IPA / CIN</option>
+              <option value="ambulatory">Ambulatory / Outpatient Network</option>
+              <option value="pe_investor">Private Equity / Investor</option>
+              <option value="mso">MSO / Management Services</option>
+              <option value="health_plan">Health Plan / Payer</option>
+              <option value="other">Other Healthcare Organization</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Primary Challenge <span class="required">*</span></label>
+          <select class="form-select" name="primaryChallenge" required>
+            <option value="" disabled selected>What brings you here?</option>
+            <option value="ai_strategy">AI strategy and implementation</option>
+            <option value="value_based_care">Value-based care / ACO optimization</option>
+            <option value="ma_advisory">M&A — buying, selling, or evaluating a deal</option>
+            <option value="health_it">Health IT / EHR / digital transformation</option>
+            <option value="vbc_and_ai">Both AI and value-based care</option>
+            <option value="general_strategy">General healthcare strategy</option>
+            <option value="speaking">Speaking engagement inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Tell Me More About Your Situation</label>
+          <textarea class="form-textarea" name="situation" placeholder="What's the specific challenge or opportunity you're navigating? The more context, the better our conversation will be..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit" id="submitBtn">
+          Request My Strategy Call →
+        </button>
+        <p class="form-privacy">
+          Your information is never sold or shared. This is a direct inquiry to Dr. Russell — not a marketing funnel.
+        </p>
+      </form>
+    </div>
+
+    <!-- SUCCESS STATE (hidden by default) -->
+    <div class="success-panel" id="successPanel">
+      <div class="success-icon">✅</div>
+      <div class="success-title">You're on the Calendar.</div>
+      <p class="success-sub">
+        Dr. Russell personally reviews every submission. You'll hear back within 24 hours with a calendar link for your 30-minute strategy call.
+      </p>
+      <p class="success-next">
+        In the meantime, connect on <a href="https://www.linkedin.com/in/anthonywrussell/" target="_blank" style="color: var(--gold);">LinkedIn</a> or
+        <a href="https://t.me/Anthony_M_and_A" target="_blank" style="color: var(--gold);">Telegram</a> to stay in touch.
+      </p>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="connect-sidebar">
+      <div class="sidebar-card">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/anthony_russell_profile_287d7a93.jpeg" alt="Dr. Anthony Russell" class="sidebar-photo" />
+        <div class="sidebar-name">Dr. Anthony Russell</div>
+        <div class="sidebar-title">Founder & Managing Principal, Saivai Group</div>
+        <p class="sidebar-bio">
+          Physician executive with 20+ years in healthcare operations. Former C-suite leader in ambulatory care, ACO/IPA/CIN, health IT, and M&A. MD, MBA, MPH. Now advising health systems, physician groups, and investors navigating AI adoption, value-based care, and strategic transactions.
+        </p>
+        <div class="sidebar-creds">
+          <span class="cred-badge">MD</span>
+          <span class="cred-badge">MBA</span>
+          <span class="cred-badge">MPH</span>
+          <span class="cred-badge">ACO/IPA</span>
+          <span class="cred-badge">HOPD/MSO</span>
+          <span class="cred-badge">340B</span>
+          <span class="cred-badge">AI Strategy</span>
+        </div>
+        <div class="sidebar-promise">
+          <div class="promise-item">
+            <span class="promise-check">✓</span>
+            <span>30 minutes — no pitch, no proposal</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-check">✓</span>
+            <span>You'll leave with at least one actionable insight</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-check">✓</span>
+            <span>If we're not a fit, I'll tell you honestly</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-check">✓</span>
+            <span>Response within 24 hours, guaranteed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card qr-card">
+        <div class="qr-card-label">Share this page</div>
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/qr_live_presentation_394c1891.png" alt="QR Code" />
+        <div class="qr-card-url">saivaigroup.com/connect</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="connect-footer">
+    <p>© 2026 Saivai Group · <a href="index.html">saivaigroup.com</a> · <a href="mailto:arussell@saivaigroup.com">arussell@saivaigroup.com</a></p>
+    <p style="margin-top: 8px;">Saivai Group provides healthcare consulting and advisory services. Content does not constitute medical, legal, or financial advice.</p>
+  </footer>
+
+  <script>
+    // ── Attribution capture ──────────────────────────────────────────────────
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const set = (id, val) => { const el = document.getElementById(id); if (el && val) el.value = val; };
+      set('field_utm_source',   params.get('utm_source'));
+      set('field_utm_medium',   params.get('utm_medium'));
+      set('field_utm_campaign', params.get('utm_campaign'));
+      set('field_utm_content',  params.get('utm_content'));
+      set('field_referrer',     document.referrer);
+      set('field_landing_page', window.location.href);
+
+      // Auto-select source chip from UTM
+      const src = params.get('utm_source');
+      const med = params.get('utm_medium');
+      if (src === 'presentation' && med === 'live') autoSelectChip('live_presentation');
+      else if (src === 'video' && med === 'recording') autoSelectChip('video_recording');
+      else if (src === 'referral') autoSelectChip('referral_friend');
+      else if (src === 'linkedin') autoSelectChip('linkedin');
+    })();
+
+    function autoSelectChip(sourceValue) {
+      const chip = document.querySelector(`[data-source="${sourceValue}"]`);
+      if (chip) { chip.classList.add('selected'); document.getElementById('field_source').value = sourceValue; }
+    }
+
+    function selectSource(el) {
+      document.querySelectorAll('.source-chip').forEach(c => c.classList.remove('selected'));
+      el.classList.add('selected');
+      document.getElementById('field_source').value = el.dataset.source;
+    }
+
+    // ── Form submission ──────────────────────────────────────────────────────
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      // Add attribution metadata
+      data.submittedAt = new Date().toISOString();
+      data.timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+      try {
+        // Primary: HubSpot Forms API (configure with your portal ID and form GUID)
+        // const HUBSPOT_PORTAL = 'YOUR_PORTAL_ID';
+        // const HUBSPOT_FORM   = 'YOUR_FORM_GUID';
+        // await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL}/${HUBSPOT_FORM}`, {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify({
+        //     fields: Object.entries(data).map(([name, value]) => ({ name, value })),
+        //     context: { pageUri: window.location.href, pageName: document.title }
+        //   })
+        // });
+
+        // Fallback: POST to TFMC platform API (when integrated)
+        // await fetch('https://tfmcdeals-nhbh94n3.manus.space/api/trpc/leads.capture', { ... });
+
+        // For now: log to console and show success (replace with real API call above)
+        console.log('[Saivai Connect] Form submission:', data);
+
+        // Show success state
+        document.getElementById('formPanel').style.display = 'none';
+        const success = document.getElementById('successPanel');
+        success.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      } catch (err) {
+        console.error('[Saivai Connect] Submission error:', err);
+        btn.disabled = false;
+        btn.textContent = 'Request My Strategy Call →';
+        alert('There was an issue submitting your request. Please email arussell@saivaigroup.com directly.');
+      }
+    }
+  </script>
+</body>
+</html>

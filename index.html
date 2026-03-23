@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Saivai Group — Healthcare AI Strategy, Governance &amp; M&A Advisory</title>
+  <meta name="description" content="Anthony W. Russell, MD MBA MPH — C-suite physician executive, healthcare AI strategist, M&A advisor, and operational leader helping healthcare organizations govern, deploy, and grow with precision." />
+  <meta name="keywords" content="healthcare AI strategy, healthcare M&A, physician executive, healthcare consulting, AI governance, healthcare advisory, Anthony Russell, Saivai Group, async consulting" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saivai Group — Healthcare AI Strategy &amp; M&A Advisory" />
+  <meta property="og:description" content="C-suite physician executive and investor-advisor with 15+ years helping healthcare organizations govern AI, grow intelligently, and transact with precision." />
+  <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/SaivaiGrouplogoonwhitebackground_146d42b2.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saivaigroup.com" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Saivai Group LLC",
+    "description": "Healthcare AI strategy, governance, M&A advisory, and operational transformation.",
+    "url": "https://saivaigroup.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Anthony W. Russell",
+      "jobTitle": "Founder & Managing Principal",
+      "hasCredential": ["MD", "MBA", "MPH"]
+    },
+    "areaServed": "United States",
+    "serviceType": ["Healthcare AI Strategy", "Healthcare M&A Advisory", "AI Governance", "Strategic Consulting", "Async Advisory"]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* ===== ASYNC ADVISORY SECTION ===== */
+    .async-section {
+      padding: var(--section-pad);
+      background: linear-gradient(135deg, #0d1117 0%, #1a1f2e 60%, #0d1117 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .async-section::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(197,164,82,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .async-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .async-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+    .async-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+    .async-body {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .async-tiers {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .async-tier {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(197,164,82,0.2);
+      border-radius: 10px;
+      padding: 20px 24px;
+      position: relative;
+    }
+    .async-tier.featured {
+      border-color: var(--gold);
+      background: rgba(197,164,82,0.07);
+    }
+    .async-tier-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .async-tier-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .async-tier-price {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 10px;
+    }
+    .async-tier-desc {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+    }
+    .async-tier-cta {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .async-tier-cta:hover { text-decoration: underline; }
+
+    /* Sync upgrade panel */
+    .sync-upgrade-panel {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 8px;
+    }
+    .sync-upgrade-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .sync-upgrade-body {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .sync-bonus-tag {
+      display: inline-block;
+      background: rgba(197,164,82,0.15);
+      border: 1px solid rgba(197,164,82,0.4);
+      color: var(--gold);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .sync-session-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    @media (max-width: 600px) {
+      .sync-session-grid { grid-template-columns: 1fr; }
+    }
+    .sync-session-item {
+      background: rgba(255,255,255,0.04);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .sync-session-name { font-size: 0.8rem; font-weight: 700; color: var(--white); }
+    .sync-session-price { font-size: 0.8rem; color: var(--gold); font-weight: 600; }
+    .sync-session-duration { font-size: 0.72rem; color: rgba(255,255,255,0.45); }
+
+    /* Hidden Calendly — only revealed when sync is clicked */
+    .sync-calendly-reveal {
+      display: none;
+      margin-top: 16px;
+      padding: 16px;
+      background: rgba(197,164,82,0.08);
+      border: 1px solid rgba(197,164,82,0.3);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .sync-calendly-reveal.active { display: block; }
+    .sync-reveal-btn {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 10px 22px;
+      background: transparent;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      border-radius: 6px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .sync-reveal-btn:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Add-on modules */
+    .addon-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) { .addon-grid { grid-template-columns: 1fr; } }
+    .addon-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .addon-icon { font-size: 1.2rem; margin-bottom: 6px; }
+    .addon-title { font-size: 0.875rem; font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .addon-desc { font-size: 0.78rem; color: rgba(255,255,255,0.55); line-height: 1.55; }
+    .addon-cme-tag {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(74,222,128,0.12);
+      color: #4ade80;
+      border: 1px solid rgba(74,222,128,0.3);
+      padding: 2px 7px;
+      border-radius: 3px;
+    }
+
+    /* Async bonus indicator */
+    .async-bonus-strip {
+      background: linear-gradient(90deg, rgba(197,164,82,0.12), rgba(197,164,82,0.04));
+      border-left: 3px solid var(--gold);
+      padding: 10px 16px;
+      border-radius: 0 6px 6px 0;
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .async-bonus-strip strong { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="#home" class="nav-logo">
+        <img
+          src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+          alt="Saivai Group"
+          class="nav-logo-img"
+        />
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#async-advisory" class="nav-link">Async Advisory</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#speaking" class="nav-link">Speaking</a></li>
+        <li><a href="ai-advisory.html" class="nav-link">AI Advisory</a></li>
+        <li><a href="leadership-coaching.html" class="nav-link">Leadership Coaching</a></li>
+        <li><a href="engage.html" class="nav-link">Engage</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Healthcare AI Strategy · Governance · M&amp;A Advisory</p>
+          <h1 class="hero-headline">
+            The Physician Executive<br />
+            <span style="color:var(--gold)">Who Sees Every Side</span><br />
+            of Every Decision
+          </h1>
+          <p class="hero-sub">
+            Anthony W. Russell, MD MBA MPH brings 15+ years of C-suite operational experience,
+            healthcare AI governance expertise, and investor-advisory depth to organizations
+            navigating acquisition, AI transformation, and strategic growth.
+          </p>
+          <div class="hero-badges">
+            <span class="hero-badge">MD</span>
+            <span class="hero-badge">MBA</span>
+            <span class="hero-badge">MPH</span>
+            <span class="hero-badge">Johns Hopkins</span>
+            <span class="hero-badge">4,000+ Followers</span>
+          </div>
+          <div class="hero-ctas">
+            <a href="#async-advisory" class="btn-primary large">
+              Start Async — Expert Response Within 24 Hours
+            </a>
+            <a href="#services" class="btn-ghost">Explore Services</a>
+          </div>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.38);margin-top:14px;letter-spacing:0.02em;">
+            No scheduling required. Submit your question or situation — we respond with precision, on your timeline.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/IMG_1040_db659977.png"
+                alt="Anthony W. Russell, MD MBA MPH"
+                class="hero-photo"
+              />
+              <div class="hero-card-badge">
+                <span class="badge-dot"></span>
+                <span>Available for Advisory Engagements</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="trust-bar">
+      <div class="trust-bar-inner">
+        <div class="trust-item"><span class="trust-icon">✦</span> 15+ Years C-Suite Experience</div>
+        <span class="trust-sep desktop-only">|</span>
+        <div class="trust-item"><span class="trust-icon">✦</span> $500M+ Transactions Advised</div>
+        <span class="trust-sep desktop-only">|</span>
+        <div class="trust-item"><span class="trust-icon">✦</span> MD · MBA · MPH</div>
+        <span class="trust-sep desktop-only">|</span>
+        <div class="trust-item"><span class="trust-icon">✦</span> Johns Hopkins Bloomberg School</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM / INSIGHT ===== -->
+  <section id="problem" class="section-light">
+    <div class="container">
+      <div class="section-header centered" style="margin-bottom:56px;">
+        <p class="section-eyebrow">The Gap Nobody Talks About</p>
+        <h2 class="section-headline" style="max-width:700px;text-align:center;">
+          Healthcare Fails When Operators, Investors, and AI Don't Speak the Same Language
+        </h2>
+        <p class="section-sub" style="text-align:center;">
+          Most M&A advisors understand finance. Most AI vendors understand technology.
+          Very few understand clinical operations, governance, and capital simultaneously —
+          and that gap costs healthcare organizations millions in value destruction and missed opportunity.
+        </p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">🏥</div>
+          <h3 class="problem-title">Clinical Complexity is Systematically Underpriced</h3>
+          <p class="problem-body">
+            Financial buyers and AI vendors routinely underestimate operational complexity.
+            A physician executive who has run these organizations sees the risks that a spreadsheet
+            and a pitch deck cannot.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🤖</div>
+          <h3 class="problem-title">70% of Healthcare AI Initiatives Fail to Deliver ROI</h3>
+          <p class="problem-body">
+            Governance gaps, workflow misalignment, and compliance failures destroy AI investments
+            before they scale. The solution is not better technology — it is better judgment
+            about where, when, and how to deploy it.
+          </p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🤝</div>
+          <h3 class="problem-title">The Rare Advisor Who Has Sat in Every Chair</h3>
+          <p class="problem-body">
+            Anthony Russell has been the operator being acquired, the executive deploying AI,
+            and the advisor structuring the deal. That convergence is not a credential —
+            it is a competitive advantage for your organization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" style="padding:var(--section-pad);background:var(--white);">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-photo-frame">
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/uPsrgGxUyfHdQVoL.png"
+            alt="Anthony W. Russell, MD MBA MPH — Strategic Advisor"
+            class="about-photo"
+            style="object-position:center top;"
+          />
+          <div class="about-credentials">
+            <div class="cred-item"><span class="cred-icon">🎓</span> MD · MBA · MPH · CPE</div>
+            <div class="cred-item"><span class="cred-icon">🏥</span> Medical University of South Carolina</div>
+            <div class="cred-item"><span class="cred-icon">🎓</span> Johns Hopkins Bloomberg School of Public Health</div>
+            <div class="cred-item"><span class="cred-icon">📋</span> Certified Physician Executive (AAPL)</div>
+            <div class="cred-item"><span class="cred-icon">✅</span> Certified in Medical Quality (ABMQ)</div>
+            <div class="cred-item"><span class="cred-icon">🔗</span> 4,000+ LinkedIn Followers</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">About Anthony Russell</p>
+          <h2 class="section-headline">C-Suite Physician Executive. Healthcare AI Strategist. Investor-Advisor.</h2>
+          <p style="font-size:1rem;color:var(--gray-500);line-height:1.8;margin-bottom:16px;">
+            Anthony W. Russell, MD MBA MPH CPE is a physician executive whose career spans clinical medicine, C-suite leadership, healthcare AI strategy, and M&amp;A advisory. He earned his medical degree from the Medical University of South Carolina and completed his pediatric residency at the UCSF–Fresno Program, one of the nation’s premier academic training sites. He subsequently earned both an MBA and a Master of Public Health from the Johns Hopkins Bloomberg School of Public Health.
+          </p>
+          <p style="font-size:1rem;color:var(--gray-500);line-height:1.8;margin-bottom:16px;">
+            Board-certified in both Pediatrics and Clinical Informatics, Anthony holds the Certified Physician Executive (CPE) designation from the American Association for Physician Leadership and is Certified in Medical Quality (CMQ) by the American Board of Medical Quality. He is also a certified Epic Physician Builder. His clinical and operational career spans some of the nation’s most respected health systems — including Kaiser Permanente / The Permanente Medical Group, Sutter Health / Sutter Physician Services (where he served as Medical Director of Clinical Informatics, leading enterprise-wide clinical technology strategy), UCSF Health / UCSF Benioff Children’s Physicians, and Community Memorial Healthcare. Anthony has served on the boards of the Ventura County Medical Association, United Way of Ventura County, BloodSource, Sierra Sacramento Valley Medical Society, and the Sacramento County Public Health Advisory Board.
+          </p>
+          <p style="font-size:1rem;color:var(--gray-500);line-height:1.8;margin-bottom:32px;">
+            Today, through Saivai Group LLC, Anthony advises healthcare organizations at the intersection of strategy, AI governance, operations, and capital — helping them grow intelligently, acquire strategically, govern AI responsibly, and exit with maximum value. He also publishes <em>Healthcare Transformation Today</em>, a weekly briefing on AI developments reshaping healthcare delivery, read by 4,000+ healthcare professionals on LinkedIn.
+          </p>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-number">15+</div>
+              <div class="about-stat-label">Years C-Suite Leadership</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number">MD MBA MPH</div>
+              <div class="about-stat-label">Triple-Credentialed</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-number">4,000+</div>
+              <div class="about-stat-label">LinkedIn Followers</div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="btn-primary" style="margin-top:8px;">
+            View Full Profile on LinkedIn →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section-light">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-headline">Advisory Services Built for Healthcare's Most Complex Moments</h2>
+        <p class="section-sub">
+          Saivai Group works with physician groups, health systems, private equity, and
+          healthcare investors at the inflection points that define organizational futures.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card service-featured">
+          <div class="service-icon">🤖</div>
+          <h3 class="service-title">Healthcare AI Strategy &amp; Governance</h3>
+          <p class="service-body">
+            Translating AI investments into clinical and operational outcomes — with a physician's
+            understanding of what works at the bedside, what fails in the boardroom, and what
+            regulators require in between.
+          </p>
+          <ul class="service-list">
+            <li>AI opportunity diagnostic &amp; prioritization</li>
+            <li>HIPAA/PHI governance framework</li>
+            <li>Vendor assessment &amp; selection</li>
+            <li>AI pilot design &amp; deployment oversight</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3 class="service-title">Strategic Growth Consulting</h3>
+          <p class="service-body">
+            Operational strategy for healthcare organizations seeking to scale,
+            diversify revenue, or enter new markets — without losing clinical quality.
+          </p>
+          <ul class="service-list">
+            <li>Market entry &amp; expansion strategy</li>
+            <li>Revenue cycle optimization</li>
+            <li>Service line development</li>
+            <li>Physician alignment models</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏛️</div>
+          <h3 class="service-title">Investor Advisory &amp; Due Diligence</h3>
+          <p class="service-body">
+            Clinical and operational due diligence for private equity, family offices,
+            and strategic acquirers evaluating healthcare assets.
+          </p>
+          <ul class="service-list">
+            <li>Clinical quality assessment</li>
+            <li>Operational risk analysis</li>
+            <li>Management team evaluation</li>
+            <li>Value creation planning</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3 class="service-title">Healthcare AI Strategy &amp; Infrastructure</h3>
+          <p class="service-body">
+            End-to-end AI advisory for healthcare organizations — from readiness assessment and governance design to implementation oversight and Fractional CAIO leadership.
+          </p>
+          <ul class="service-list">
+            <li>AI Operations Audit &amp; Readiness Assessment</li>
+            <li>AI governance framework &amp; policy design</li>
+            <li>Implementation retainer &amp; oversight</li>
+            <li>Fractional CAIO &amp; AI leadership training</li>
+          </ul>
+          <a href="ai-advisory.html" class="service-cta" style="display:inline-block;margin-top:12px;font-size:0.85rem;font-weight:600;color:var(--gold);">Explore AI Advisory →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚕️</div>
+          <h3 class="service-title">Healthcare M&amp;A Advisory</h3>
+          <p class="service-body">
+            Buy-side and sell-side advisory for physician groups, specialty practices,
+            and healthcare platforms. We structure deals that preserve clinical culture
+            while maximizing enterprise value.
+          </p>
+          <ul class="service-list">
+            <li>Target identification &amp; screening</li>
+            <li>Due diligence (clinical + financial)</li>
+            <li>Deal structuring &amp; negotiation</li>
+            <li>Post-merger integration planning</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3 class="service-title">Consulting for Equity</h3>
+          <p class="service-body">
+            For healthcare organizations with strong fundamentals but limited capital —
+            a structured consulting engagement that creates alignment through equity participation.
+          </p>
+          <ul class="service-list">
+            <li>Half-day strategic intensive</li>
+            <li>Equity-based compensation structure</li>
+            <li>Ongoing advisory relationship</li>
+            <li>Board observer or director roles</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎓</div>
+          <h3 class="service-title">Leadership &amp; Executive Coaching</h3>
+          <p class="service-body">
+            AI-calibrated leadership development for healthcare executives and physician leaders. Every program begins with a structured assessment, and the curriculum is built around your team's actual starting point — not a generic syllabus.
+          </p>
+          <ul class="service-list">
+            <li>Executive &amp; physician executive coaching (1:1)</li>
+            <li>AI-enhanced cohort leadership programs</li>
+            <li>Pre/post assessment framework with outcome reporting</li>
+            <li>Close collaboration with your HR leadership team</li>
+          </ul>
+          <a href="leadership-coaching.html" class="service-cta" style="display:inline-block;margin-top:12px;font-size:0.85rem;font-weight:600;color:var(--gold);">Explore Leadership Coaching →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎤</div>
+          <h3 class="service-title">Executive Speaking &amp; Education</h3>
+          <p class="service-body">
+            Keynote presentations and executive education on healthcare M&A, AI transformation,
+            and the future of physician-led organizations.
+          </p>
+          <ul class="service-list">
+            <li>Healthcare M&A keynotes</li>
+            <li>AI in healthcare workshops</li>
+            <li>Executive roundtable facilitation</li>
+            <li>Board education sessions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ASYNC ADVISORY SECTION ===== -->
+  <section id="async-advisory" class="async-section">
+    <div class="container">
+      <div class="section-header centered" style="margin-bottom:56px;">
+        <p class="section-eyebrow light">Saivai Advisory Access</p>
+        <h2 class="section-headline light" style="max-width:760px;text-align:center;">
+          For Extremely Busy Healthcare Executives —<br />
+          <span style="color:var(--gold)">We Meet You Where You Are</span>
+        </h2>
+        <p class="section-sub" style="text-align:center;color:rgba(255,255,255,0.6);max-width:620px;margin:0 auto;">
+          No scheduling. No waiting rooms. Submit your question, situation, or challenge —
+          and receive a precise, expert response within 24 hours. Healthcare strategy,
+          AI governance, M&amp;A advisory, and operational insight — delivered asynchronously,
+          on your timeline.
+        </p>
+      </div>
+
+      <div class="async-inner">
+        <!-- LEFT: Value proposition + example questions -->
+        <div>
+          <p class="section-eyebrow light" style="margin-bottom:20px;">Saivai Async Advisory</p>
+          <p class="async-body">
+            The async model is the primary way to engage Saivai Group. It is not a budget option —
+            it is the access model built for healthcare executives who cannot afford to wait for a
+            calendar opening to get a critical question answered. Every response is personally
+            reviewed and delivered by Anthony Russell within 24 hours.
+          </p>
+          <p class="async-body">
+            Submit your strategic question, M&amp;A situation, AI governance challenge, or operational
+            dilemma. Receive a structured, expert written response — grounded in 15+ years of
+            physician executive experience across Kaiser Permanente, Sutter Health, UCSF Health,
+            and Community Memorial Healthcare.
+          </p>
+
+          <!-- What you can ask -->
+          <p class="section-eyebrow light" style="margin-top:32px;margin-bottom:16px;">What Healthcare Executives Ask</p>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+            <div style="background:rgba(197,164,82,0.07);border:1px solid rgba(197,164,82,0.2);border-radius:8px;padding:14px 18px;">
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.75);font-style:italic;line-height:1.6;">&ldquo;We&rsquo;re evaluating a PE offer for our 12-physician orthopedic group. What should we be asking that we&rsquo;re probably not asking?&rdquo;</p>
+            </div>
+            <div style="background:rgba(197,164,82,0.07);border:1px solid rgba(197,164,82,0.2);border-radius:8px;padding:14px 18px;">
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.75);font-style:italic;line-height:1.6;">&ldquo;Our health system is considering an AI documentation tool. What governance questions should the CMO be raising before we sign?&rdquo;</p>
+            </div>
+            <div style="background:rgba(197,164,82,0.07);border:1px solid rgba(197,164,82,0.2);border-radius:8px;padding:14px 18px;">
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.75);font-style:italic;line-height:1.6;">&ldquo;We&rsquo;re 18 months post-acquisition and the integration is stalling. What are the most common failure points at this stage?&rdquo;</p>
+            </div>
+          </div>
+
+          <!-- Key differentiators -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:36px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="color:var(--gold);font-size:1rem;margin-top:2px;">✓</span>
+              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Expert response within 24 hours</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="color:var(--gold);font-size:1rem;margin-top:2px;">✓</span>
+              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">No scheduling required</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="color:var(--gold);font-size:1rem;margin-top:2px;">✓</span>
+              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Personally reviewed by Anthony Russell</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="color:var(--gold);font-size:1rem;margin-top:2px;">✓</span>
+              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Structured written deliverable</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="color:var(--gold);font-size:1rem;margin-top:2px;">✓</span>
+              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Single questions to ongoing retainers</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="color:var(--gold);font-size:1rem;margin-top:2px;">✓</span>
+              <span style="font-size:0.85rem;color:rgba(255,255,255,0.7);">Confidential &amp; secure</span>
+            </div>
+          </div>
+
+          <a href="engage.html" class="btn-primary" style="display:inline-block;">
+            View Engagement Options &amp; Investment →
+          </a>
+        </div>
+
+        <!-- RIGHT: Sync upgrade + QR -->
+        <div>
+          <div class="sync-upgrade-panel">
+            <div class="sync-bonus-tag">⬆ UPGRADE OPTION</div>
+            <div class="sync-upgrade-title">Prefer a Live Conversation? Saivai Direct Advisory.</div>
+            <div class="sync-upgrade-body">
+              For high-stakes decisions that require real-time dialogue — board presentations,
+              time-sensitive transactions, or politically complex organizational situations —
+              Saivai Direct Advisory provides live, synchronous access to Anthony Russell.
+              All sessions include a pre-session briefing document and post-session written summary.
+            </div>
+            <div class="sync-session-grid">
+              <div class="sync-session-item">
+                <div class="sync-session-name">Strategy Intensive</div>
+                <div class="sync-session-duration">90 minutes · virtual</div>
+              </div>
+              <div class="sync-session-item">
+                <div class="sync-session-name">Deep Dive Session</div>
+                <div class="sync-session-duration">3 hours · virtual</div>
+              </div>
+              <div class="sync-session-item">
+                <div class="sync-session-name">Half-Day Intensive</div>
+                <div class="sync-session-duration">4 hours · virtual or onsite*</div>
+              </div>
+              <div class="sync-session-item">
+                <div class="sync-session-name">Full-Day Intensive</div>
+                <div class="sync-session-duration">8 hours · virtual or onsite*</div>
+              </div>
+            </div>
+            <p style="font-size:0.72rem;color:rgba(255,255,255,0.4);margin-top:10px;">* Onsite sessions include travel &amp; accommodations. <a href="engage.html" style="color:var(--gold);">View engagement investment →</a></p>
+
+            <div class="async-bonus-strip">
+              <strong>Retainer Bonus:</strong> Clients on the Strategic Advisory Retainer who upgrade
+              to a Direct Advisory session receive <strong>one complimentary additional advisory exchange</strong>
+              — extending the engagement beyond the live session at no additional cost.
+            </div>
+
+            <button class="sync-reveal-btn" id="syncRevealBtn" onclick="document.getElementById('syncCalendlyPanel').classList.toggle('active'); this.textContent = this.textContent.includes('Schedule') ? '✕ Close' : '📅 Schedule a Direct Advisory Session';">
+              📅 Schedule a Direct Advisory Session
+            </button>
+            <div class="sync-calendly-reveal" id="syncCalendlyPanel">
+              <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);margin-bottom:10px;">
+                Book your Direct Advisory session via the link below. A pre-session intake form
+                will be sent upon confirmation.
+              </p>
+              <a href="https://calendly.com/panjas-llc/saivai-group-consulting" target="_blank" rel="noopener"
+                 style="display:inline-block;padding:10px 22px;background:var(--gold);color:#0d1117;font-weight:700;font-size:0.85rem;border-radius:6px;text-decoration:none;letter-spacing:0.03em;">
+                Open Scheduling Link →
+              </a>
+            </div>
+          </div>
+
+          <!-- QR Code panel -->
+          <div style="margin-top:28px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px;text-align:center;">
+            <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:14px;">Scan to Start Async</p>
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/qr_async_intake_02589c90.png"
+              alt="QR Code — saivaigroup.com async intake"
+              style="width:160px;height:160px;object-fit:contain;border-radius:8px;background:white;padding:8px;"
+            />
+            <p style="font-size:0.78rem;color:rgba(255,255,255,0.5);margin-top:12px;">saivaigroup.com</p>
+            <p style="font-size:0.7rem;color:rgba(255,255,255,0.3);margin-top:4px;">Expert response within 24 hours · No scheduling required</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" style="padding:var(--section-pad);background:var(--white);">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-eyebrow">How We Work</p>
+        <h2 class="section-headline">A Rigorous, Physician-Led Process Built for High-Stakes Decisions</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <div class="process-content">
+            <h3 class="process-title">Submit Your Situation — Async, On Your Schedule</h3>
+            <p class="process-body">
+              The fastest way to engage Saivai Group is asynchronous. Submit your question,
+              challenge, or situation through our intake form — no scheduling, no waiting.
+              Anthony reviews every submission personally and responds with a structured,
+              expert analysis within 24 hours. For those who prefer a live conversation first,
+              a direct advisory session is available upon request.
+            </p>
+            <a href="#async-advisory" class="service-cta" style="display:inline-block;margin-top:10px;font-size:0.85rem;font-weight:600;color:var(--gold);">
+              Start Async Now →
+            </a>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <div class="process-content">
+            <h3 class="process-title">Strategic Assessment</h3>
+            <p class="process-body">
+              Deep analysis of your market position, operational performance, financial
+              profile, and strategic options. We use proprietary frameworks developed
+              across 15+ years of healthcare advisory work — delivered as a structured
+              diagnostic with clear prioritization and a 90-day action roadmap.
+            </p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <div class="process-content">
+            <h3 class="process-title">Strategic Intensive (Async or Live)</h3>
+            <p class="process-body">
+              A structured working engagement — delivered asynchronously through a series of
+              expert exchanges, or as a live half-day intensive for organizations that prefer
+              real-time dialogue. Both paths produce a clear strategic roadmap, prioritized
+              action plan, and — where appropriate — the foundation for an equity-based
+              advisory relationship.
+            </p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="process-num">04</div>
+          <div class="process-content">
+            <h3 class="process-title">Execution &amp; Accountability</h3>
+            <p class="process-body">
+              Ongoing advisory support through implementation — whether that means
+              transaction execution, AI deployment oversight, operational transformation,
+              or governance program management. We stay engaged until the outcome is achieved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPEAKING / THOUGHT LEADERSHIP ===== -->
+  <section id="speaking" class="section-dark convergence">
+    <div class="container">
+      <div class="convergence-inner">
+        <div>
+          <p class="section-eyebrow light">Speaking &amp; Thought Leadership</p>
+          <h2 class="section-headline light">
+            Bringing the Physician Executive Perspective to the Rooms Where Decisions Are Made
+          </h2>
+          <p class="convergence-body">
+            Anthony Russell speaks at healthcare conferences, executive roundtables, and
+            investor forums on the intersection of clinical operations, M&A strategy, and
+            healthcare AI. His presentations combine rigorous data with practitioner insight —
+            the perspective of someone who has been in the operating room, the boardroom,
+            and the deal room.
+          </p>
+          <p class="convergence-body">
+            He also publishes <strong style="color:var(--gold)">Healthcare Transformation Today</strong> —
+            a weekly LinkedIn newsletter covering AI developments reshaping healthcare delivery,
+            read by 4,000+ healthcare professionals, executives, and investors.
+          </p>
+          <div class="speaking-topics">
+            <div class="topic-item"><span class="topic-dot">→</span> Healthcare M&A in 2026: What Buyers and Sellers Need to Know</div>
+            <div class="topic-item"><span class="topic-dot">→</span> AI Transformation in Clinical Settings: Separating Signal from Noise</div>
+            <div class="topic-item"><span class="topic-dot">→</span> Healthcare AI Governance: The Framework Every Organization Needs</div>
+            <div class="topic-item"><span class="topic-dot">→</span> Physician Group Valuation: The Metrics That Actually Matter</div>
+            <div class="topic-item"><span class="topic-dot">→</span> The Future of Physician-Led Organizations</div>
+            <div class="topic-item"><span class="topic-dot">→</span> Consulting for Equity: A New Model for Healthcare Advisory</div>
+          </div>
+          <a href="#contact" class="btn-primary">
+            Inquire About Speaking
+          </a>
+        </div>
+        <div>
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/physician_boardroom_saivai_4b046b6f.png"
+            alt="Anthony Russell — Presenting to Healthcare Leadership"
+            class="speaking-img"
+          />
+          <div class="speaking-ai-note">
+            <span class="ai-note-icon">📰</span>
+            <div class="ai-note-text">
+              <strong style="color:var(--white);">Healthcare Transformation Today</strong><br />
+              Weekly briefings on AI reshaping healthcare delivery — every week on LinkedIn.
+              <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="ai-note-link">
+                Subscribe on LinkedIn →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section id="contact" class="section-contact">
+    <div class="contact-bg-grid"></div>
+    <div class="container">
+      <div class="contact-inner">
+        <div>
+          <p class="section-eyebrow light">Get Started</p>
+          <h2 class="contact-headline">
+            Expert Guidance on Your Timeline —<br />
+            <span class="gold">No Scheduling Required</span>
+          </h2>
+          <p class="contact-sub">
+            Submit your situation asynchronously and receive a precise, structured response
+            from Anthony Russell within 24 hours. No pitch decks. No junior associates.
+            Direct expert insight — delivered on your schedule.
+          </p>
+
+          <!-- PRIMARY: ASYNC INTAKE -->
+          <div class="booking-options">
+            <div class="booking-option booking-option-featured">
+              <div class="booking-option-label">START HERE — ASYNC ADVISORY</div>
+              <div class="booking-option-title">Submit Your Situation</div>
+              <div class="booking-option-desc">
+                Describe your challenge, question, or strategic situation. Anthony reviews
+                every submission personally and responds with expert analysis within 24 hours.
+                No scheduling. No waiting. Just clarity.
+              </div>
+              <a href="mailto:anthony@saivaigroup.com?subject=Async%20Advisory%20Intake&body=Please%20describe%20your%20situation%20or%20question%20here." class="btn-primary large booking-btn">
+                ✉️ Submit Your Situation Async
+              </a>
+            </div>
+            <div class="booking-option">
+              <div class="booking-option-label">PREFER LIVE?</div>
+              <div class="booking-option-title">Saivai Direct Advisory</div>
+              <div class="booking-option-desc">
+                For high-stakes, time-sensitive decisions that require real-time dialogue. Virtual and onsite sessions available. Every session includes a pre-session briefing document and post-session written summary.
+              </div>
+              <button class="btn-ghost-navy booking-btn" onclick="document.getElementById('syncCalendlyPanel').classList.add('active'); document.getElementById('async-advisory').scrollIntoView({behavior:'smooth'});">
+                📅 Request Direct Advisory
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-alt" style="margin-top:32px;">
+            <div class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <a href="mailto:anthony@saivaigroup.com" class="contact-link">anthony@saivaigroup.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🔗</span>
+              <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="contact-link">
+                linkedin.com/in/anthonywrussell
+              </a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🌐</span>
+              <a href="/connect" class="contact-link">saivaigroup.com/connect</a>
+            </div>
+          </div>
+
+          <!-- Attribution tracking -->
+          <div class="attribution-panel">
+            <p class="attribution-label">How did you find us?</p>
+            <div class="attribution-options">
+              <a href="/connect?utm_source=presentation&utm_medium=live&utm_campaign=openclaw-tuesday-2026" class="attribution-btn">I was at a live event</a>
+              <a href="/connect?utm_source=video&utm_medium=recording&utm_campaign=openclaw-tuesday-2026" class="attribution-btn">I watched a recording</a>
+              <a href="/connect?utm_source=referral&utm_medium=social&utm_campaign=openclaw-tuesday-2026" class="attribution-btn">A friend shared this</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-panel">
+          <p class="qr-label">Scan to Start Async</p>
+          <div class="qr-img" style="background:white;display:flex;align-items:center;justify-content:center;border:none;padding:0;">
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/qr_async_intake_02589c90.png"
+              alt="QR Code — saivaigroup.com"
+              style="width:100%;height:100%;object-fit:contain;border-radius:8px;"
+            />
+          </div>
+          <p class="qr-url">saivaigroup.com</p>
+          <p class="qr-sub">Expert response within 24 hours · No scheduling required</p>
+          <div style="margin-top:20px;">
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/physician_group_saivai_a5c6fd5d.png"
+              alt="Anthony W. Russell, MD — Physician Executive"
+              style="width:100%;height:180px;object-fit:cover;object-position:center top;border-radius:8px;"
+            />
+            <p style="text-align:center;font-size:0.8rem;color:#7a8099;margin-top:10px;font-weight:500;">Anthony W. Russell, MD MBA MPH</p>
+            <p style="text-align:center;font-size:0.75rem;color:#c5c9d4;">Founder &amp; Managing Principal, Saivai Group</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+            alt="Saivai Group"
+            class="footer-logo"
+          />
+          <p class="footer-tagline">Healthcare AI Strategy · Governance · M&amp;A Advisory · Leadership Coaching</p>
+          <p class="footer-legal" style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:8px;">
+            © 2026 Saivai Group LLC. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-col-title">Services</div>
+            <a href="#services" class="footer-link">Healthcare M&A Advisory</a>
+            <a href="ai-advisory.html" class="footer-link">Healthcare AI Strategy</a>
+            <a href="#services" class="footer-link">Strategic Growth Consulting</a>
+            <a href="#services" class="footer-link">Investor Due Diligence</a>
+            <a href="#services" class="footer-link">Consulting for Equity</a>
+            <a href="leadership-coaching.html" class="footer-link">Leadership Coaching</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Advisory Access</div>
+            <a href="#async-advisory" class="footer-link">Async Advisory (Primary)</a>
+            <a href="#async-advisory" class="footer-link">Direct Advisory Sessions</a>
+            <a href="ai-advisory.html" class="footer-link">AI Leadership Training</a>
+            <a href="ai-advisory.html" class="footer-link">Clinical Staff Education (CME)</a>
+            <a href="engage.html" class="footer-link">Engagement Options</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Connect</div>
+            <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+            <a href="mailto:anthony@saivaigroup.com" class="footer-link">Email Anthony</a>
+            <a href="/connect" class="footer-link">Connect Page</a>
+            <div class="footer-col-title" style="margin-top:16px;">Credentials</div>
+            <span class="footer-link" style="cursor:default;pointer-events:none;">MD · MBA · MPH</span>
+            <span class="footer-link" style="cursor:default;pointer-events:none;">Johns Hopkins Bloomberg School</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>© 2026 Saivai Group LLC. All rights reserved.</p>
+          <p class="footer-disclaimer">
+            The information on this website is for informational purposes only and does not constitute legal,
+            financial, or investment advice. Past results do not guarantee future outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Leadership Coaching — Saivai Group | Precision Leadership Development for Healthcare Executives</title>
+  <meta name="description" content="AI-calibrated executive coaching and physician leadership development programs for healthcare organizations. Dr. Anthony W. Russell, MD MBA MPH — physician-led, evidence-based, outcome-measured." />
+  <meta name="keywords" content="physician executive coaching, healthcare leadership coaching, executive coaching healthcare, physician leadership development, leadership coaching healthcare executives, Anthony Russell MD, Saivai Group" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Leadership Coaching — Saivai Group" />
+  <meta property="og:description" content="Precision leadership development for healthcare executives. AI-calibrated curriculum. Physician-led. Outcome-measured." />
+  <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310419663028641299/NhBh94n36mULL2GnQ23F9o/SaivaiGrouplogoonwhitebackground_146d42b2.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saivaigroup.com/leadership-coaching" />
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Saivai Leadership Institute",
+    "description": "Precision leadership development for healthcare executives — executive coaching, physician executive coaching, and AI-calibrated cohort programs.",
+    "provider": {
+      "@type": "Person",
+      "name": "Anthony W. Russell",
+      "jobTitle": "Founder & Managing Principal",
+      "hasCredential": ["MD", "MBA", "MPH"]
+    },
+    "serviceType": ["Executive Coaching", "Physician Executive Coaching", "Leadership Development"],
+    "areaServed": "United States"
+  }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ===== LEADERSHIP COACHING PAGE — LOCAL STYLES ===== */
+
+    /* Hero */
+    .lc-hero {
+      min-height: 100vh;
+      background: var(--navy);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 72px;
+      overflow: hidden;
+    }
+    .lc-hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+    .lc-hero-glow {
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(10,126,164,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .lc-hero-glow-2 {
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(201,168,76,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .lc-hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 80px 24px;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 60px;
+      align-items: center;
+    }
+    .lc-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+    .lc-hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .lc-hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .lc-hero-headline span {
+      color: var(--gold);
+    }
+    .lc-hero-sub {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 40px;
+    }
+    .lc-hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .lc-hero-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 16px;
+      padding: 32px;
+      backdrop-filter: blur(8px);
+    }
+    .lc-hero-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+    .lc-hero-stat {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .lc-hero-stat:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .lc-hero-stat-num {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .lc-hero-stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.4;
+    }
+
+    /* Differentiators */
+    .lc-diff {
+      padding: var(--section-pad);
+      background: var(--gray-50);
+    }
+    .lc-diff-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 56px;
+    }
+    .lc-diff-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 36px 32px;
+      box-shadow: var(--shadow);
+      border-top: 3px solid var(--gold);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .lc-diff-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .lc-diff-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+    .lc-diff-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .lc-diff-body {
+      font-size: 0.95rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* Programs */
+    .lc-programs {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+    .lc-programs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .lc-program-card {
+      border: 1.5px solid var(--gray-100);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .lc-program-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-lg);
+    }
+    .lc-program-card.featured {
+      border-color: var(--gold);
+      box-shadow: 0 8px 40px rgba(201,168,76,0.15);
+    }
+    .lc-program-header {
+      background: var(--navy);
+      padding: 28px 28px 24px;
+      position: relative;
+    }
+    .lc-program-header.featured-header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    }
+    .lc-program-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+    .lc-program-name {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .lc-program-tagline {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+    .lc-program-body {
+      padding: 28px;
+    }
+    .lc-program-desc {
+      font-size: 0.95rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .lc-program-features {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+    .lc-program-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--navy);
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .lc-program-features li::before {
+      content: '✓';
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .lc-program-cta {
+      display: block;
+      text-align: center;
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 13px 24px;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    .lc-program-cta:hover {
+      background: var(--navy-light);
+    }
+    .lc-program-cta.gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+    .lc-program-cta.gold:hover {
+      background: var(--gold-light);
+    }
+
+    /* AI Methodology */
+    .lc-ai {
+      padding: var(--section-pad);
+      background: linear-gradient(135deg, var(--navy) 0%, #0d2244 60%, var(--navy) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .lc-ai::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(10,126,164,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .lc-ai-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .lc-ai-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .lc-ai-headline span {
+      color: var(--gold);
+    }
+    .lc-ai-body {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .lc-ai-privacy {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 28px;
+    }
+    .lc-ai-privacy-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .lc-ai-privacy-text {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+    }
+    .lc-ai-privacy-text strong {
+      color: var(--gold);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .lc-ai-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .lc-ai-step {
+      display: flex;
+      gap: 20px;
+      position: relative;
+    }
+    .lc-ai-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 52px;
+      bottom: 0;
+      width: 2px;
+      background: rgba(201,168,76,0.2);
+    }
+    .lc-ai-step-num {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .lc-ai-step-content {
+      padding-bottom: 36px;
+    }
+    .lc-ai-step-title {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+    .lc-ai-step-body {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.65;
+    }
+
+    /* Assessment Framework */
+    .lc-assess {
+      padding: var(--section-pad);
+      background: var(--gray-50);
+    }
+    .lc-assess-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 56px;
+    }
+    .lc-assess-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .lc-assess-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+    }
+    .lc-assess-card.pre::before { background: var(--teal); }
+    .lc-assess-card.session::before { background: var(--gold); }
+    .lc-assess-card.post::before { background: var(--navy); }
+    .lc-assess-timing {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .lc-assess-card.pre .lc-assess-timing { color: var(--teal); }
+    .lc-assess-card.session .lc-assess-timing { color: var(--gold); }
+    .lc-assess-card.post .lc-assess-timing { color: var(--navy); }
+    .lc-assess-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .lc-assess-desc {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .lc-assess-meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .lc-assess-meta-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .lc-assess-meta-val {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .lc-assess-meta-label {
+      font-size: 0.72rem;
+      color: var(--gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .lc-assess-topics {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .lc-assess-topics-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      margin-bottom: 10px;
+    }
+    .lc-assess-topic-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .lc-assess-tag {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+      border-radius: 100px;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    /* Journey */
+    .lc-journey {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+    .lc-journey-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 56px;
+      position: relative;
+    }
+    .lc-journey-steps::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold) 0%, var(--teal) 100%);
+      opacity: 0.3;
+    }
+    .lc-journey-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .lc-journey-step-num {
+      width: 72px;
+      height: 72px;
+      background: var(--navy);
+      border: 3px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .lc-journey-step-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .lc-journey-step-body {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      line-height: 1.65;
+    }
+
+    /* Who This Is For */
+    .lc-icp {
+      padding: var(--section-pad);
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .lc-icp::before {
+      content: '';
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .lc-icp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+    }
+    .lc-icp-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 28px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .lc-icp-card:hover {
+      border-color: rgba(201,168,76,0.4);
+      background: rgba(201,168,76,0.05);
+    }
+    .lc-icp-role {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    .lc-icp-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .lc-icp-body {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+    }
+
+    /* Credentials */
+    .lc-credentials {
+      padding: var(--section-pad);
+      background: var(--white);
+    }
+    .lc-credentials-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .lc-cred-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .lc-cred-body {
+      font-size: 1rem;
+      color: var(--gray-500);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .lc-cred-list {
+      list-style: none;
+      margin-top: 24px;
+    }
+    .lc-cred-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+    .lc-cred-list li::before {
+      content: '◆';
+      color: var(--gold);
+      font-size: 0.6rem;
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .lc-cred-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .lc-cred-badge {
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 6px;
+      letter-spacing: 0.04em;
+    }
+    .lc-cred-right {
+      background: var(--gray-50);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .lc-cred-quote {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 20px;
+      border-left: 3px solid var(--gold);
+    }
+    .lc-cred-quote-attr {
+      font-size: 0.82rem;
+      color: var(--gray-500);
+      font-weight: 600;
+    }
+    .lc-cred-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .lc-cred-stat {
+      text-align: center;
+      padding: 20px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+    .lc-cred-stat-num {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .lc-cred-stat-label {
+      font-size: 0.78rem;
+      color: var(--gray-500);
+      line-height: 1.4;
+    }
+
+    /* FAQ */
+    .lc-faq {
+      padding: var(--section-pad);
+      background: var(--gray-50);
+    }
+    .lc-faq-list {
+      max-width: 800px;
+      margin: 56px auto 0;
+    }
+    .lc-faq-item {
+      background: var(--white);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(13,27,62,0.06);
+    }
+    .lc-faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 28px;
+      text-align: left;
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: color 0.2s;
+    }
+    .lc-faq-q:hover { color: var(--gold); }
+    .lc-faq-q::after {
+      content: '+';
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+    .lc-faq-item.open .lc-faq-q::after {
+      transform: rotate(45deg);
+    }
+    .lc-faq-a {
+      display: none;
+      padding: 0 28px 22px;
+      font-size: 0.95rem;
+      color: var(--gray-500);
+      line-height: 1.75;
+    }
+    .lc-faq-item.open .lc-faq-a {
+      display: block;
+    }
+
+    /* CTA */
+    .lc-cta {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .lc-cta::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .lc-cta-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .lc-cta-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.65);
+      max-width: 560px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+      position: relative;
+    }
+    .lc-cta-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .lc-disclaimer {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 20px;
+      position: relative;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .lc-hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .lc-hero-card { max-width: 500px; }
+      .lc-ai-inner { grid-template-columns: 1fr; gap: 48px; }
+      .lc-credentials-inner { grid-template-columns: 1fr; gap: 48px; }
+    }
+    @media (max-width: 900px) {
+      .lc-diff-grid { grid-template-columns: 1fr; }
+      .lc-programs-grid { grid-template-columns: 1fr; }
+      .lc-assess-grid { grid-template-columns: 1fr; }
+      .lc-journey-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .lc-journey-steps::before { display: none; }
+      .lc-icp-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .lc-hero-actions { flex-direction: column; }
+      .lc-journey-steps { grid-template-columns: 1fr; }
+      .lc-icp-grid { grid-template-columns: 1fr; }
+      .lc-cred-stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img
+          src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+          alt="Saivai Group"
+          class="nav-logo-img"
+        />
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#async-advisory" class="nav-link">Async Advisory</a></li>
+        <li><a href="ai-advisory.html" class="nav-link">AI Advisory</a></li>
+        <li><a href="leadership-coaching.html" class="nav-link" style="color:var(--gold);">Leadership Coaching</a></li>
+        <li><a href="engage.html" class="nav-link">Engage</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="lc-hero" id="home">
+    <div class="lc-hero-bg-grid"></div>
+    <div class="lc-hero-glow"></div>
+    <div class="lc-hero-glow-2"></div>
+    <div class="lc-hero-inner container">
+      <div>
+        <div class="lc-hero-badge">Saivai Leadership Institute</div>
+        <h1 class="lc-hero-headline">
+          Precision Leadership<br />
+          Development for<br />
+          <span>Healthcare Executives</span>
+        </h1>
+        <p class="lc-hero-sub">
+          Most leadership programs deliver a fixed curriculum to whoever shows up. This one starts by understanding exactly where your leaders are — and builds from there. Every session is calibrated to your team's actual starting point, paced to their demonstrated readiness, and measured at every stage.
+        </p>
+        <div class="lc-hero-actions">
+          <a href="https://calendly.com/panjas-llc/saivai-group-consulting" target="_blank" rel="noopener" class="btn-primary large">
+            Schedule a Discovery Conversation
+          </a>
+          <a href="#programs" class="btn-ghost">Explore Programs</a>
+        </div>
+      </div>
+      <div class="lc-hero-card">
+        <div class="lc-hero-card-title">The Saivai Difference</div>
+        <div class="lc-hero-stat">
+          <span class="lc-hero-stat-num">AI-Calibrated</span>
+          <span class="lc-hero-stat-label">Pre-engagement analysis maps your team's exact leadership gaps before Session 1</span>
+        </div>
+        <div class="lc-hero-stat">
+          <span class="lc-hero-stat-num">Physician-Led</span>
+          <span class="lc-hero-stat-label">Dr. Russell brings MD + MBA + MPH credentials and lived physician-executive experience</span>
+        </div>
+        <div class="lc-hero-stat">
+          <span class="lc-hero-stat-num">Outcome-Measured</span>
+          <span class="lc-hero-stat-label">Every session ends with a formative assessment. Every program ends with a longitudinal outcome report</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFFERENTIATORS ===== -->
+  <section class="lc-diff">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Why Saivai Leadership Institute</div>
+        <h2 class="section-headline">Three Capabilities No Competitor Offers Together</h2>
+        <p class="section-sub">The physician executive coaching market is crowded with generalists. Saivai Leadership Institute is built on three capabilities that, in combination, are genuinely unique.</p>
+      </div>
+      <div class="lc-diff-grid">
+        <div class="lc-diff-card">
+          <div class="lc-diff-icon">🩺</div>
+          <div class="lc-diff-title">Physician-Led, Not Physician-Adjacent</div>
+          <p class="lc-diff-body">Dr. Russell is a practicing physician executive — MD, MBA, MPH — who has navigated the same identity transition your physician leaders face. He speaks the clinical language, understands the cultural resistance, and has earned the credibility that no non-physician coach can manufacture. Physicians trust physicians. This is not a positioning claim; it is a structural advantage.</p>
+        </div>
+        <div class="lc-diff-card">
+          <div class="lc-diff-icon">🤖</div>
+          <div class="lc-diff-title">AI-Enhanced Adaptive Curriculum</div>
+          <p class="lc-diff-body">Before the first session, AI analyzes your team's pre-engagement survey responses to identify collective gaps, individual outliers, and readiness levels. The curriculum sequence is calibrated to your team's actual starting point — not a generic syllabus. After each session, formative assessments drive the next session's design. When your cohort diverges, the program splits tracks. This is precision medicine applied to leadership development.</p>
+        </div>
+        <div class="lc-diff-card">
+          <div class="lc-diff-icon">📊</div>
+          <div class="lc-diff-title">Board-Level Outcome Reporting</div>
+          <p class="lc-diff-body">Every program produces a longitudinal development report — a data record of each leader's growth trajectory from baseline to completion. This is not a satisfaction survey. It is a rigorous pre-to-post comparison across every competency domain, delivered to your HR leadership as a board-level talent development asset. Your investment in leadership development becomes defensible and measurable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROGRAMS ===== -->
+  <section class="lc-programs" id="programs">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Engagement Options</div>
+        <h2 class="section-headline">Three Programs. One Standard of Excellence.</h2>
+        <p class="section-sub">Whether you are developing an individual leader or an entire executive team, every Saivai Leadership Institute engagement is built on the same AI-calibrated, outcome-measured foundation.</p>
+      </div>
+      <div class="lc-programs-grid">
+
+        <!-- Executive Coaching -->
+        <div class="lc-program-card">
+          <div class="lc-program-header">
+            <div class="lc-program-name">Executive Leadership Coaching</div>
+            <p class="lc-program-tagline">1:1 development for C-suite and senior healthcare executives</p>
+          </div>
+          <div class="lc-program-body">
+            <p class="lc-program-desc">Designed for CMOs, CNOs, CIOs, and senior executives navigating complex organizational challenges, strategic transitions, or the demands of a new executive role. Bi-weekly coaching sessions, AI-analyzed progress tracking, and a mid-point and final outcome report.</p>
+            <ul class="lc-program-features">
+              <li>AI-analyzed individual leadership profile before Session 1</li>
+              <li>Bi-weekly 60-minute 1:1 coaching sessions</li>
+              <li>6-month standard engagement (12-month available)</li>
+              <li>Mid-point progress review at 3 months</li>
+              <li>Final outcome report with development trajectory</li>
+              <li>Direct access to Dr. Russell between sessions</li>
+            </ul>
+            <a href="https://calendly.com/panjas-llc/saivai-group-consulting" target="_blank" rel="noopener" class="lc-program-cta">Schedule a Conversation</a>
+          </div>
+        </div>
+
+        <!-- Physician Executive Coaching -->
+        <div class="lc-program-card featured">
+          <div class="lc-program-header featured-header">
+            <div class="lc-program-badge">Most Requested</div>
+            <div class="lc-program-name">Physician Executive Coaching</div>
+            <p class="lc-program-tagline">Specialized for physicians navigating the leadership transition</p>
+          </div>
+          <div class="lc-program-body">
+            <p class="lc-program-desc">The physician-to-executive transition is unlike any other leadership challenge. You trained for 10+ years to be the expert in the room. Now you must lead through influence, manage people who will never share your clinical identity, and navigate a system that often undervalues what you know. Dr. Russell has lived this transition. This program is built for it.</p>
+            <ul class="lc-program-features">
+              <li>Physician-specific pre-engagement assessment (identity + transition)</li>
+              <li>Bi-weekly 1:1 sessions with Dr. Russell (MD MBA MPH)</li>
+              <li>Curriculum anchored in physician identity and clinical-to-executive transition research</li>
+              <li>Peer cohort option available (physician leader groups)</li>
+              <li>6 or 12-month engagement structures</li>
+              <li>Outcome report designed for medical staff leadership and board reporting</li>
+            </ul>
+            <a href="https://calendly.com/panjas-llc/saivai-group-consulting" target="_blank" rel="noopener" class="lc-program-cta gold">Schedule a Conversation</a>
+          </div>
+        </div>
+
+        <!-- Cohort Program -->
+        <div class="lc-program-card">
+          <div class="lc-program-header">
+            <div class="lc-program-name">Leadership Cohort Program</div>
+            <p class="lc-program-tagline">AI-calibrated group development for leadership teams</p>
+          </div>
+          <div class="lc-program-body">
+            <p class="lc-program-desc">The highest-leverage engagement for organizations investing in leadership culture. Monthly half-day sessions for 6–20 participants, with AI-driven curriculum calibration, session-end formative assessments, adaptive track splitting when the cohort diverges, and an annual outcome report delivered to HR leadership.</p>
+            <ul class="lc-program-features">
+              <li>Pre-engagement AI analysis of entire leadership cohort</li>
+              <li>Monthly half-day sessions (4 hours each)</li>
+              <li>Formative assessment after every session</li>
+              <li>Adaptive track splitting when cohort diverges</li>
+              <li>Quarterly HR leadership briefings</li>
+              <li>Annual longitudinal outcome report</li>
+              <li>Close collaboration with your HR leadership team</li>
+            </ul>
+            <a href="https://calendly.com/panjas-llc/saivai-group-consulting" target="_blank" rel="noopener" class="lc-program-cta">Schedule a Conversation</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AI METHODOLOGY ===== -->
+  <section class="lc-ai" id="methodology">
+    <div class="container">
+      <div class="lc-ai-inner">
+        <div>
+          <div class="section-eyebrow light">The Methodology</div>
+          <h2 class="lc-ai-headline">
+            Precision Medicine,<br />Applied to<br />
+            <span>Leadership Development</span>
+          </h2>
+          <p class="lc-ai-body">
+            In clinical medicine, you do not treat a patient before you understand their baseline. You assess, diagnose, and then design a treatment plan calibrated to their specific condition. You do not give every patient the same protocol. You adjust as you receive feedback. You measure outcomes.
+          </p>
+          <p class="lc-ai-body">
+            Most leadership programs do the opposite. They deliver a fixed curriculum to whoever shows up and call it "customized" because they added the organization's name to the slide deck. The Saivai Leadership Institute applies the clinical model to leadership development — with AI as the diagnostic instrument and Dr. Russell as the physician interpreting the results and directing the treatment.
+          </p>
+          <p class="lc-ai-body">
+            Before your first session, every participant completes a structured pre-engagement assessment. AI synthesizes the responses to identify your team's collective leadership gaps, individual outliers, and readiness levels. Dr. Russell receives a calibration brief that tells him exactly where your leaders are — and the curriculum sequence is built from there. After each session, formative assessments measure comprehension and application readiness. The AI analyzes these results and generates a preparation brief for the next session. When the cohort diverges significantly, the program creates parallel tracks. At the end of the program, a longitudinal outcome report documents every leader's development trajectory.
+          </p>
+          <div class="lc-ai-privacy">
+            <div class="lc-ai-privacy-icon">🔒</div>
+            <div class="lc-ai-privacy-text">
+              <strong>Privacy and Confidentiality</strong>
+              All individual assessment responses are strictly confidential. They are used only for curriculum calibration and are never shared with your organization, HR leadership, or any third party. Only aggregate, anonymized cohort insights are shared with your HR leadership team. Assessment data is governed by the same confidentiality standards as clinical information.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-eyebrow light" style="margin-bottom:28px;">How It Works</div>
+          <div class="lc-ai-steps">
+            <div class="lc-ai-step">
+              <div class="lc-ai-step-num">1</div>
+              <div class="lc-ai-step-content">
+                <div class="lc-ai-step-title">Pre-Engagement Assessment (2–3 weeks before Session 1)</div>
+                <div class="lc-ai-step-body">Every participant completes a structured 45–60 minute assessment covering leadership identity, team dynamics, communication, decision-making, and — for physician leaders — the clinical-to-executive transition. AI synthesizes responses into individual profiles and a cohort aggregate. Dr. Russell receives a calibration brief before the first session.</div>
+              </div>
+            </div>
+            <div class="lc-ai-step">
+              <div class="lc-ai-step-num">2</div>
+              <div class="lc-ai-step-content">
+                <div class="lc-ai-step-title">Calibrated Session Delivery</div>
+                <div class="lc-ai-step-body">Each session is designed around the cohort's demonstrated starting point — not a generic curriculum. Dr. Russell knows before walking in the room which competencies need foundational work, which leaders are ready to advance, and where the cohort's most significant gaps lie.</div>
+              </div>
+            </div>
+            <div class="lc-ai-step">
+              <div class="lc-ai-step-num">3</div>
+              <div class="lc-ai-step-content">
+                <div class="lc-ai-step-title">Session-End Formative Assessment</div>
+                <div class="lc-ai-step-body">The final 30 minutes of every session include a structured assessment measuring comprehension, application confidence, and readiness for the next level. AI analyzes these responses overnight and generates Dr. Russell's preparation brief for the next session — including any recommended adjustments to pacing, content, or track structure.</div>
+              </div>
+            </div>
+            <div class="lc-ai-step">
+              <div class="lc-ai-step-num">4</div>
+              <div class="lc-ai-step-content">
+                <div class="lc-ai-step-title">Adaptive Track Splitting (When Needed)</div>
+                <div class="lc-ai-step-body">When formative assessment data shows significant divergence — some participants ready to advance, others needing more time — Dr. Russell and your HR leadership review the data together and determine whether to create parallel tracks or provide targeted bridging content. No participant is left behind. No participant is held back.</div>
+              </div>
+            </div>
+            <div class="lc-ai-step">
+              <div class="lc-ai-step-num">5</div>
+              <div class="lc-ai-step-content">
+                <div class="lc-ai-step-title">Longitudinal Outcome Report</div>
+                <div class="lc-ai-step-body">At program completion, every participant completes a post-program assessment that mirrors the pre-engagement survey. AI produces a longitudinal development report documenting each leader's growth trajectory across every competency domain. This report is delivered to your HR leadership as a board-level talent development asset.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ASSESSMENT FRAMEWORK ===== -->
+  <section class="lc-assess" id="assessment">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Assessment Architecture</div>
+        <h2 class="section-headline">Three Assessments. One Continuous Development Record.</h2>
+        <p class="section-sub">The Saivai Leadership Institute assessment framework is built on three instruments that together create a complete, longitudinal picture of each leader's development.</p>
+      </div>
+      <div class="lc-assess-grid">
+        <div class="lc-assess-card pre">
+          <div class="lc-assess-timing">Pre-Engagement</div>
+          <div class="lc-assess-title">Leadership Baseline Assessment</div>
+          <p class="lc-assess-desc">Establishes each leader's starting point across seven competency domains. AI synthesizes responses to calibrate the curriculum sequence and identify cohort-level patterns before Session 1.</p>
+          <div class="lc-assess-meta">
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">41</span>
+              <span class="lc-assess-meta-label">Questions</span>
+            </div>
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">45–60</span>
+              <span class="lc-assess-meta-label">Minutes</span>
+            </div>
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">7</span>
+              <span class="lc-assess-meta-label">Domains</span>
+            </div>
+          </div>
+          <div class="lc-assess-topics">
+            <div class="lc-assess-topics-title">Domains Covered</div>
+            <div class="lc-assess-topic-tags">
+              <span class="lc-assess-tag">Leadership Identity</span>
+              <span class="lc-assess-tag">Team Dynamics</span>
+              <span class="lc-assess-tag">Communication</span>
+              <span class="lc-assess-tag">Decision-Making</span>
+              <span class="lc-assess-tag">Physician-Executive Interface</span>
+              <span class="lc-assess-tag">AI Governance</span>
+              <span class="lc-assess-tag">Program Goals</span>
+            </div>
+          </div>
+        </div>
+        <div class="lc-assess-card session">
+          <div class="lc-assess-timing">Session-End Formative</div>
+          <div class="lc-assess-title">Readiness &amp; Comprehension Check</div>
+          <p class="lc-assess-desc">Administered at the end of every session. Measures comprehension of session content, application confidence, and readiness for the next level. Drives next-session calibration and flags track-splitting triggers.</p>
+          <div class="lc-assess-meta">
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">10</span>
+              <span class="lc-assess-meta-label">Core Items</span>
+            </div>
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">15–20</span>
+              <span class="lc-assess-meta-label">Minutes</span>
+            </div>
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">Every</span>
+              <span class="lc-assess-meta-label">Session</span>
+            </div>
+          </div>
+          <div class="lc-assess-topics">
+            <div class="lc-assess-topics-title">What It Measures</div>
+            <div class="lc-assess-topic-tags">
+              <span class="lc-assess-tag">Comprehension</span>
+              <span class="lc-assess-tag">Application Confidence</span>
+              <span class="lc-assess-tag">Readiness Score</span>
+              <span class="lc-assess-tag">Open Questions</span>
+              <span class="lc-assess-tag">Next-Session Prep</span>
+            </div>
+          </div>
+        </div>
+        <div class="lc-assess-card post">
+          <div class="lc-assess-timing">Post-Program Outcome</div>
+          <div class="lc-assess-title">Development Trajectory Report</div>
+          <p class="lc-assess-desc">Mirrors the pre-engagement survey for direct longitudinal comparison. Produces the board-level outcome report documenting each leader's growth trajectory and the program's measurable impact.</p>
+          <div class="lc-assess-meta">
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">48</span>
+              <span class="lc-assess-meta-label">Questions</span>
+            </div>
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">45–60</span>
+              <span class="lc-assess-meta-label">Minutes</span>
+            </div>
+            <div class="lc-assess-meta-item">
+              <span class="lc-assess-meta-val">Full</span>
+              <span class="lc-assess-meta-label">Outcome Report</span>
+            </div>
+          </div>
+          <div class="lc-assess-topics">
+            <div class="lc-assess-topics-title">Deliverables</div>
+            <div class="lc-assess-topic-tags">
+              <span class="lc-assess-tag">Pre/Post Comparison</span>
+              <span class="lc-assess-tag">Competency Trajectory</span>
+              <span class="lc-assess-tag">Team Culture Shift</span>
+              <span class="lc-assess-tag">ROI Documentation</span>
+              <span class="lc-assess-tag">HR Board Report</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY ===== -->
+  <section class="lc-journey" id="journey">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Your Engagement Journey</div>
+        <h2 class="section-headline">From First Conversation to Measurable Transformation</h2>
+      </div>
+      <div class="lc-journey-steps">
+        <div class="lc-journey-step">
+          <div class="lc-journey-step-num">1</div>
+          <div class="lc-journey-step-title">Discovery Conversation</div>
+          <p class="lc-journey-step-body">A focused 45-minute conversation with Dr. Russell to understand your organization's leadership challenges, goals, and the right program structure. No obligation. No pitch. Just a genuine diagnostic conversation.</p>
+        </div>
+        <div class="lc-journey-step">
+          <div class="lc-journey-step-num">2</div>
+          <div class="lc-journey-step-title">Pre-Engagement Assessment</div>
+          <p class="lc-journey-step-body">Participants complete the Leadership Baseline Assessment. AI synthesizes responses into individual profiles and a cohort aggregate. Dr. Russell receives a calibration brief. The curriculum is built around your team's actual starting point.</p>
+        </div>
+        <div class="lc-journey-step">
+          <div class="lc-journey-step-num">3</div>
+          <div class="lc-journey-step-title">Calibrated Program Delivery</div>
+          <p class="lc-journey-step-body">Sessions are delivered at the pace and sequence your team's readiness data supports. Every session ends with a formative assessment. The program adapts continuously. Tracks split when the cohort diverges. No one is left behind or held back.</p>
+        </div>
+        <div class="lc-journey-step">
+          <div class="lc-journey-step-num">4</div>
+          <div class="lc-journey-step-title">Outcome Report &amp; Renewal</div>
+          <p class="lc-journey-step-body">At program completion, your HR leadership receives a longitudinal development report documenting measurable outcomes. Most organizations renew for a second program year — building on the foundation established in Year 1.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO THIS IS FOR ===== -->
+  <section class="lc-icp" id="who-we-help">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-eyebrow light">Who This Is For</div>
+        <h2 class="section-headline light">Built for the Leaders Who Keep Healthcare Moving</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,0.6);">The Saivai Leadership Institute serves healthcare executives across the full spectrum of organizational roles — from physician leaders navigating their first administrative appointment to C-suite executives managing enterprise-level transformation.</p>
+      </div>
+      <div class="lc-icp-grid">
+        <div class="lc-icp-card">
+          <div class="lc-icp-role">Clinical Leadership</div>
+          <div class="lc-icp-title">Chief Medical Officers &amp; CMIOs</div>
+          <p class="lc-icp-body">Navigating the intersection of clinical credibility and organizational authority. Managing physician culture while driving quality, safety, and AI governance priorities.</p>
+        </div>
+        <div class="lc-icp-card">
+          <div class="lc-icp-role">Nursing &amp; Operations</div>
+          <div class="lc-icp-title">Chief Nursing Officers &amp; COOs</div>
+          <p class="lc-icp-body">Leading the largest workforce in healthcare through constant change — staffing pressures, technology transformation, and the relentless demands of patient care delivery.</p>
+        </div>
+        <div class="lc-icp-card">
+          <div class="lc-icp-role">Technology &amp; Informatics</div>
+          <div class="lc-icp-title">CIOs, CTOs &amp; CDOs</div>
+          <p class="lc-icp-body">Translating technical strategy into organizational change. Building the credibility to lead clinical and administrative stakeholders through AI deployment and digital transformation.</p>
+        </div>
+        <div class="lc-icp-card">
+          <div class="lc-icp-role">Physician Transition</div>
+          <div class="lc-icp-title">Medical Directors &amp; Department Chairs</div>
+          <p class="lc-icp-body">Entering leadership without a leadership training program. Managing peers who were once colleagues. Building authority without abandoning clinical identity.</p>
+        </div>
+        <div class="lc-icp-card">
+          <div class="lc-icp-role">Organizational Development</div>
+          <div class="lc-icp-title">HR &amp; Talent Development Leaders</div>
+          <p class="lc-icp-body">Building the business case for leadership development investment. Designing programs that produce measurable outcomes and board-level reporting. Working with Dr. Russell as a strategic partner, not a vendor.</p>
+        </div>
+        <div class="lc-icp-card">
+          <div class="lc-icp-role">Emerging Leaders</div>
+          <div class="lc-icp-title">High-Potential Physician Leaders</div>
+          <p class="lc-icp-body">Identified by your organization as future executives. Building the leadership foundation before the role demands it. Developing the skills, identity, and confidence to lead at the next level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CREDENTIALS ===== -->
+  <section class="lc-credentials" id="credentials">
+    <div class="container">
+      <div class="lc-credentials-inner">
+        <div>
+          <div class="section-eyebrow">Why Dr. Russell</div>
+          <h2 class="lc-cred-headline">A Physician Executive Who Has Lived the Transition</h2>
+          <p class="lc-cred-body">
+            The most common failure mode in physician executive coaching is the coach who has never been a physician. They understand leadership theory. They do not understand what it costs a physician to stop being the expert in the room. They do not understand the cultural dynamics of a medical staff. They do not understand the specific vocabulary, hierarchy, and identity architecture of clinical medicine.
+          </p>
+          <p class="lc-cred-body">
+            Dr. Anthony W. Russell brings MD, MBA, and MPH credentials — combined with 15+ years of healthcare system leadership experience spanning clinical operations, AI strategy, M&A advisory, and organizational transformation. He has navigated the physician-to-executive transition himself. He has led clinical teams, managed administrative complexity, and built the credibility to operate at the intersection of clinical and organizational leadership.
+          </p>
+          <ul class="lc-cred-list">
+            <li>MD — Clinical training and physician identity foundation</li>
+            <li>MBA — Business strategy, organizational management, financial acumen</li>
+            <li>MPH (Johns Hopkins Bloomberg School of Public Health) — Population health, systems thinking, policy</li>
+            <li>Board-certified in Clinical Informatics — AI governance and health IT leadership</li>
+            <li>15+ years healthcare system leadership across ambulatory, ACO/IPA, M&amp;A, and AI strategy</li>
+            <li>Founder, Saivai Group — Healthcare AI Strategy, Governance, and M&amp;A Advisory</li>
+          </ul>
+          <div class="lc-cred-badges">
+            <span class="lc-cred-badge">MD</span>
+            <span class="lc-cred-badge">MBA</span>
+            <span class="lc-cred-badge">MPH — Johns Hopkins</span>
+            <span class="lc-cred-badge">Clinical Informatics</span>
+            <span class="lc-cred-badge">FACHE Eligible</span>
+          </div>
+        </div>
+        <div class="lc-cred-right">
+          <p class="lc-cred-quote">
+            "The physician-to-executive transition is the most underserved leadership development challenge in healthcare. Physicians are trained to be the expert. Leadership requires something entirely different — and no one teaches them how to make that shift."
+          </p>
+          <p class="lc-cred-quote-attr">— Anthony W. Russell, MD MBA MPH<br />Founder, Saivai Group</p>
+          <div class="lc-cred-stats">
+            <div class="lc-cred-stat">
+              <div class="lc-cred-stat-num">15+</div>
+              <div class="lc-cred-stat-label">Years Healthcare System Leadership</div>
+            </div>
+            <div class="lc-cred-stat">
+              <div class="lc-cred-stat-num">3</div>
+              <div class="lc-cred-stat-label">Advanced Degrees (MD, MBA, MPH)</div>
+            </div>
+            <div class="lc-cred-stat">
+              <div class="lc-cred-stat-num">AI</div>
+              <div class="lc-cred-stat-label">Board-Certified Clinical Informatics</div>
+            </div>
+            <div class="lc-cred-stat">
+              <div class="lc-cred-stat-num">M&A</div>
+              <div class="lc-cred-stat-label">Healthcare Transaction Advisory</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="lc-faq" id="faq">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-eyebrow">Frequently Asked Questions</div>
+        <h2 class="section-headline">What Healthcare Executives Ask Before Engaging</h2>
+      </div>
+      <div class="lc-faq-list">
+        <div class="lc-faq-item">
+          <button class="lc-faq-q">What makes physician executive coaching different from standard executive coaching?</button>
+          <div class="lc-faq-a">
+            Physicians undergo a fundamentally different professional formation than any other executive. They are trained for a decade or more to be the definitive expert — the person who knows the answer, makes the call, and bears the consequence. Leadership requires the opposite: influence without authority, decision-making through others, and comfort with ambiguity. A standard executive coach can teach leadership frameworks. Only a physician coach can help a physician leader navigate the identity shift that makes those frameworks actually work. Dr. Russell has lived this transition and built a coaching methodology specifically designed for it.
+          </div>
+        </div>
+        <div class="lc-faq-item">
+          <button class="lc-faq-q">How does the AI-enhanced methodology actually work in practice?</button>
+          <div class="lc-faq-a">
+            Think of it as the clinical diagnostic model applied to leadership development. Before your first session, every participant completes a structured assessment. AI analyzes the responses to identify your team's collective leadership gaps, individual outliers, and readiness levels — producing a calibration brief for Dr. Russell. After each session, formative assessments measure comprehension and application readiness. The AI analyzes these results overnight and generates a preparation brief for the next session. The AI is the instrument; Dr. Russell is the physician interpreting the data and directing the program. All individual responses are strictly confidential — only aggregate, anonymized insights are shared with your organization.
+          </div>
+        </div>
+        <div class="lc-faq-item">
+          <button class="lc-faq-q">How does the program integrate with our HR leadership team?</button>
+          <div class="lc-faq-a">
+            The Saivai Leadership Institute is designed as a partnership with your HR leadership, not a standalone vendor engagement. Before the program begins, Dr. Russell works with your HR team to understand your organizational structure, strategic priorities, and talent development goals. During the program, HR leadership receives quarterly briefings with aggregate, anonymized cohort insights. At program completion, they receive the full longitudinal outcome report. For cohort programs, Dr. Russell and your HR leadership jointly review track-splitting decisions when the cohort diverges. The goal is to make your HR leadership team look excellent to the board — with data to back it up.
+          </div>
+        </div>
+        <div class="lc-faq-item">
+          <button class="lc-faq-q">What is the typical investment for a cohort program?</button>
+          <div class="lc-faq-a">
+            Engagement investment is customized based on cohort size, program duration, and organizational structure. The Discovery Conversation is the right starting point — it allows Dr. Russell to understand your specific situation and design a program structure and investment level that fits your organization's goals and budget. Contact us to schedule a conversation and receive a customized program proposal.
+          </div>
+        </div>
+        <div class="lc-faq-item">
+          <button class="lc-faq-q">How is individual assessment data kept confidential?</button>
+          <div class="lc-faq-a">
+            Individual assessment responses are never shared with your organization, HR leadership, or any third party. They are used exclusively for curriculum calibration — to help Dr. Russell understand where each participant is and design the program accordingly. Only aggregate, anonymized cohort insights are shared with HR leadership. This confidentiality commitment is non-negotiable and is documented in the engagement agreement. Participants are informed of this policy before completing any assessment.
+          </div>
+        </div>
+        <div class="lc-faq-item">
+          <button class="lc-faq-q">Can the program be delivered virtually, in-person, or both?</button>
+          <div class="lc-faq-a">
+            All program formats are available — fully virtual, fully in-person, or a hybrid model. Most cohort programs use a hybrid approach: virtual for monthly sessions and in-person for the kickoff session and mid-year intensive. The pre-engagement and post-program assessments are always completed online. Dr. Russell is based in the United States and available for in-person delivery nationally. Travel and accommodations for in-person sessions are included in the engagement investment.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="lc-cta">
+    <div class="container">
+      <h2 class="lc-cta-headline">Ready to Build Leaders Who Lead?</h2>
+      <p class="lc-cta-sub">The Discovery Conversation is 45 minutes. No obligation. No pitch. Just a genuine diagnostic conversation about your organization's leadership challenges and whether the Saivai Leadership Institute is the right fit.</p>
+      <div class="lc-cta-actions">
+        <a href="https://calendly.com/panjas-llc/saivai-group-consulting" target="_blank" rel="noopener" class="btn-primary large">
+          Schedule a Discovery Conversation
+        </a>
+        <a href="mailto:anthony@saivaigroup.com?subject=Leadership%20Coaching%20Inquiry" class="btn-ghost">
+          Email Dr. Russell Directly
+        </a>
+      </div>
+      <p class="lc-disclaimer">Engagement investment levels are current as of the date of this page and are subject to change without prior notice. Confirmed engagements are honored at the rate agreed upon at time of booking.</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+            alt="Saivai Group"
+            class="footer-logo"
+          />
+          <p class="footer-tagline">Healthcare AI Strategy · Governance · M&amp;A Advisory · Leadership Coaching</p>
+          <p class="footer-legal" style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:8px;">
+            © 2026 Saivai Group LLC. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-col-title">Services</div>
+            <a href="index.html#services" class="footer-link">Healthcare M&amp;A Advisory</a>
+            <a href="ai-advisory.html" class="footer-link">Healthcare AI Strategy</a>
+            <a href="leadership-coaching.html" class="footer-link">Leadership Coaching</a>
+            <a href="index.html#services" class="footer-link">Strategic Growth Consulting</a>
+            <a href="engage.html" class="footer-link">Engagement Options</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Leadership Coaching</div>
+            <a href="leadership-coaching.html#programs" class="footer-link">Executive Coaching</a>
+            <a href="leadership-coaching.html#programs" class="footer-link">Physician Executive Coaching</a>
+            <a href="leadership-coaching.html#programs" class="footer-link">Leadership Cohort Program</a>
+            <a href="leadership-coaching.html#methodology" class="footer-link">AI-Enhanced Methodology</a>
+            <a href="leadership-coaching.html#assessment" class="footer-link">Assessment Framework</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Connect</div>
+            <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+            <a href="mailto:anthony@saivaigroup.com" class="footer-link">Email Anthony</a>
+            <a href="index.html#contact" class="footer-link">Contact</a>
+            <div class="footer-col-title" style="margin-top:16px;">Credentials</div>
+            <span class="footer-link" style="cursor:default;pointer-events:none;">MD · MBA · MPH</span>
+            <span class="footer-link" style="cursor:default;pointer-events:none;">Johns Hopkins Bloomberg School</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>© 2026 Saivai Group LLC. All rights reserved.</p>
+          <p class="footer-disclaimer">
+            The information on this website is for informational purposes only and does not constitute legal,
+            financial, or investment advice. Past results do not guarantee future outcomes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.lc-faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.lc-faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.lc-faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+</body>
+</html>

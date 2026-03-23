@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Engagement Options — Saivai Group</title>
+  <meta name="description" content="Saivai Group engagement options for healthcare executives: Async Advisory, Direct Advisory sessions, and Retained Advisory relationships." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .engage-hero {
+      background: linear-gradient(135deg, #0d1117 0%, #0D1B3E 60%, #0d1117 100%);
+      padding: 140px 0 80px;
+      text-align: center;
+    }
+    .engage-hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .engage-hero-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .engage-hero-sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.8;
+      max-width: 620px;
+      margin: 0 auto 32px;
+    }
+
+    /* Philosophy bar */
+    .philosophy-bar {
+      background: var(--gold);
+      padding: 16px 0;
+      text-align: center;
+    }
+    .philosophy-bar p {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #0d1117;
+      letter-spacing: 0.02em;
+    }
+
+    /* Engagement tiers */
+    .engage-section {
+      padding: 80px 0;
+    }
+    .engage-section.alt { background: var(--gray-50); }
+    .engage-section.dark {
+      background: linear-gradient(135deg, #0D1B3E 0%, #0d1117 100%);
+    }
+
+    .engage-tier {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .engage-tier.reverse { direction: rtl; }
+    .engage-tier.reverse > * { direction: ltr; }
+    @media (max-width: 900px) {
+      .engage-tier { grid-template-columns: 1fr; }
+      .engage-tier.reverse { direction: ltr; }
+    }
+
+    .tier-eyebrow {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .tier-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .tier-title.light { color: #fff; }
+    .tier-title.dark { color: var(--navy); }
+    .tier-desc {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .tier-desc.light { color: rgba(255,255,255,0.7); }
+    .tier-desc.dark { color: var(--gray-500); }
+
+    .tier-features {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+    .tier-features li {
+      font-size: 0.875rem;
+      padding: 6px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .tier-features li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+    .tier-features.light li { color: rgba(255,255,255,0.75); }
+    .tier-features.dark li { color: var(--gray-500); }
+
+    .tier-note {
+      font-size: 0.8rem;
+      font-style: italic;
+      margin-top: 12px;
+    }
+    .tier-note.light { color: rgba(255,255,255,0.4); }
+    .tier-note.dark { color: var(--gray-300); }
+
+    .tier-visual {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(197,164,82,0.2);
+      border-radius: 12px;
+      padding: 36px;
+    }
+    .tier-visual.on-light {
+      background: var(--white);
+      border: 1px solid var(--gray-100);
+      box-shadow: 0 8px 32px rgba(13,27,62,0.1);
+    }
+    .tier-visual-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .tier-visual-title.light { color: #fff; }
+    .tier-visual-title.dark { color: var(--navy); }
+
+    .format-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .format-item {
+      padding: 14px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .format-item.dark-bg {
+      background: rgba(197,164,82,0.08);
+      border: 1px solid rgba(197,164,82,0.2);
+    }
+    .format-item.light-bg {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+    }
+    .format-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .format-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .format-label.light { color: rgba(255,255,255,0.8); }
+    .format-label.dark { color: var(--navy); }
+    .format-sub {
+      font-size: 0.7rem;
+      margin-top: 3px;
+    }
+    .format-sub.light { color: rgba(255,255,255,0.45); }
+    .format-sub.dark { color: var(--gray-500); }
+
+    /* Retainer scope */
+    .retainer-scope {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .scope-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(197,164,82,0.15);
+      border-radius: 6px;
+    }
+    .scope-item.on-light {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-100);
+    }
+    .scope-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+    .scope-text {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    .scope-text.light { color: rgba(255,255,255,0.65); }
+    .scope-text.dark { color: var(--gray-500); }
+
+    /* Qualification statement */
+    .qualification-section {
+      padding: 60px 0;
+      background: var(--navy);
+      text-align: center;
+    }
+    .qual-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.5;
+      max-width: 700px;
+      margin: 0 auto 24px;
+    }
+    .qual-sub {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.55);
+      max-width: 500px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+    }
+
+    /* Contact form */
+    .engage-contact {
+      padding: 80px 0;
+      background: var(--white);
+    }
+    .engage-contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    @media (max-width: 900px) { .engage-contact-inner { grid-template-columns: 1fr; } }
+    .contact-form-group {
+      margin-bottom: 18px;
+    }
+    .contact-form-label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+      letter-spacing: 0.04em;
+    }
+    .contact-form-input,
+    .contact-form-select,
+    .contact-form-textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--gray-100);
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      transition: border-color 0.2s;
+    }
+    .contact-form-input:focus,
+    .contact-form-select:focus,
+    .contact-form-textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    .contact-form-textarea { min-height: 120px; resize: vertical; }
+    .contact-form-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--gold);
+      color: #0d1117;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+    .contact-form-submit:hover { background: var(--gold-light); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-logo">
+        <img
+          src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+          alt="Saivai Group"
+          class="nav-logo-img"
+        />
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#async-advisory" class="nav-link">Async Advisory</a></li>
+        <li><a href="ai-advisory.html" class="nav-link">AI Advisory</a></li>
+        <li><a href="leadership-coaching.html" class="nav-link">Leadership Coaching</a></li>
+        <li><a href="engage.html" class="nav-link" style="color:var(--gold);">Engage</a></li>
+        <li><a href="#contact-form" class="nav-cta">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="engage-hero">
+    <p class="engage-hero-eyebrow">Engagement Options · Saivai Group</p>
+    <h1 class="engage-hero-headline">How We Work Together</h1>
+    <p class="engage-hero-sub">
+      Saivai Group engagements are structured to match the nature of your situation — whether you need
+      an immediate expert perspective, a focused strategy session, or an ongoing advisory relationship.
+      All engagements begin with a brief discovery conversation.
+    </p>
+    <a href="#contact-form" class="btn-primary">Begin the Conversation →</a>
+  </section>
+
+  <!-- ===== PHILOSOPHY BAR ===== -->
+  <div class="philosophy-bar">
+    <p>Every engagement is structured to your situation — not a template. Saivai Group works where the stakes are high.</p>
+  </div>
+
+  <!-- ===== TIER 1: ASYNC ADVISORY ===== -->
+  <section class="engage-section dark" id="async">
+    <div class="container">
+      <div class="engage-tier">
+        <div>
+          <div class="tier-eyebrow">Tier 1 · Accessible Advisory</div>
+          <h2 class="tier-title light">Async Advisory</h2>
+          <p class="tier-desc light">
+            Expert physician executive guidance on your schedule. Submit your strategic question,
+            operational challenge, or decision scenario and receive a thoughtful, substantive written
+            response — grounded in decades of healthcare executive experience and the Saivai Way framework.
+          </p>
+          <p class="tier-desc light">
+            Ideal for healthcare executives, practice owners, and operators who need expert perspective
+            on a specific question without the overhead of a full consulting engagement.
+          </p>
+          <ul class="tier-features light">
+            <li>Written expert response within 24 hours</li>
+            <li>Strategic, operational, and M&amp;A questions welcome</li>
+            <li>Confidential and secure platform</li>
+            <li>Tiered access: single questions through ongoing async relationships</li>
+            <li>Personally reviewed and delivered by Anthony Russell</li>
+          </ul>
+
+          <!-- Async Pricing Tiers -->
+          <div style="margin-top:32px;">
+            <p style="font-size:0.7rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;">Engagement Investment</p>
+
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <!-- Tier: Diagnostic -->
+              <div style="background:rgba(197,164,82,0.1);border:1.5px solid var(--gold);border-radius:10px;padding:20px 22px;position:relative;">
+                <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Most Popular · Best Value</div>
+                <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:4px;">Diagnostic Engagement — $497</div>
+                <div style="font-size:0.82rem;color:rgba(255,255,255,0.55);margin-bottom:10px;">One focused strategic question or situation assessment</div>
+                <div style="font-size:0.875rem;color:rgba(255,255,255,0.7);line-height:1.65;">
+                  Ideal for a specific strategic question, an AI readiness check, or an initial M&amp;A situation assessment.
+                  Submit your context — receive a structured, expert written response with clear next steps, delivered within 24 hours.
+                </div>
+                <a href="#contact-form" style="display:inline-block;margin-top:14px;font-size:0.82rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:0.04em;">Get Started →</a>
+              </div>
+
+              <!-- Tier: Advisory Engagement -->
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(197,164,82,0.25);border-radius:10px;padding:20px 22px;">
+                <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Multi-Exchange Engagement</div>
+                <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:4px;">Advisory Engagement — $997</div>
+                <div style="font-size:0.82rem;color:rgba(255,255,255,0.55);margin-bottom:10px;">Up to three exchanges · structured deliverable included</div>
+                <div style="font-size:0.875rem;color:rgba(255,255,255,0.7);line-height:1.65;">
+                  For organizations working through a multi-faceted challenge — AI pilot scoping, transaction structuring,
+                  or governance framework design. Multiple expert exchanges, structured deliverables, and a clear prioritized roadmap.
+                </div>
+                <a href="#contact-form" style="display:inline-block;margin-top:14px;font-size:0.82rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:0.04em;">Get Started →</a>
+              </div>
+
+              <!-- Tier: Retainer -->
+              <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(197,164,82,0.25);border-radius:10px;padding:20px 22px;">
+                <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Ongoing Advisory Retainer</div>
+                <div style="font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:4px;">Strategic Advisory Retainer — $1,997/month</div>
+                <div style="font-size:0.82rem;color:rgba(255,255,255,0.55);margin-bottom:10px;">Up to eight exchanges per month · priority 24-hour response</div>
+                <div style="font-size:0.875rem;color:rgba(255,255,255,0.7);line-height:1.65;">
+                  For organizations that want Anthony in their corner on an ongoing basis — AI governance support,
+                  strategy evolution, M&amp;A deal flow advisory, and operational guidance delivered asynchronously
+                  as situations arise. Priority response and monthly summary included.
+                </div>
+                <a href="#contact-form" style="display:inline-block;margin-top:14px;font-size:0.82rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:0.04em;">Get Started →</a>
+              </div>
+            </div>
+
+            <!-- Price-change disclaimer -->
+            <div style="margin-top:20px;padding:12px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;">
+              <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);line-height:1.65;">
+                <em>Engagement investment levels are current as of the date of this page and are subject to change
+                without prior notice. Confirmed engagements are honored at the rate agreed upon at time of booking.</em>
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:28px;">
+            <a href="#contact-form" class="btn-primary">Begin Your Engagement →</a>
+          </div>
+        </div>
+        <div>
+          <div class="tier-visual">
+            <div class="tier-visual-title light">What You Can Ask</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="background:rgba(197,164,82,0.08);border:1px solid rgba(197,164,82,0.2);border-radius:8px;padding:14px;">
+                <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);font-style:italic;">"We're evaluating a PE offer for our 12-physician orthopedic group. What should we be asking that we're probably not asking?"</p>
+              </div>
+              <div style="background:rgba(197,164,82,0.08);border:1px solid rgba(197,164,82,0.2);border-radius:8px;padding:14px;">
+                <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);font-style:italic;">"Our health system is considering an AI documentation tool. What governance questions should the CMO be raising before we sign?"</p>
+              </div>
+              <div style="background:rgba(197,164,82,0.08);border:1px solid rgba(197,164,82,0.2);border-radius:8px;padding:14px;">
+                <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);font-style:italic;">"We're 18 months post-acquisition and the integration is stalling. What are the most common failure points at this stage?"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIER 2: DIRECT ADVISORY ===== -->
+  <section class="engage-section alt" id="direct">
+    <div class="container">
+      <div class="engage-tier reverse">
+        <div>
+          <div class="tier-eyebrow" style="color:var(--navy);opacity:0.6;">Tier 2 · Direct Advisory</div>
+          <h2 class="tier-title dark">Direct Advisory Sessions</h2>
+          <p class="tier-desc dark">
+            Focused, high-intensity strategy sessions with Anthony Russell — conducted onsite at your
+            organization or virtually. Designed for leadership teams facing a specific strategic decision,
+            operational challenge, or transformation initiative that requires expert facilitation and
+            structured thinking.
+          </p>
+          <p class="tier-desc dark">
+            Each session is prepared in advance with a structured agenda, pre-session briefing, and
+            post-session summary with actionable recommendations. Onsite sessions include travel from
+            Camarillo, California.
+          </p>
+          <ul class="tier-features dark">
+            <li>Half-Day Intensive (4 hours) — onsite or virtual</li>
+            <li>Full-Day Intensive (8 hours) — onsite or virtual</li>
+            <li>Pre-session briefing and agenda preparation</li>
+            <li>Post-session executive summary and recommendations</li>
+            <li>Onsite sessions include travel and accommodations</li>
+          </ul>
+          <p class="tier-note dark">Investment structured to your engagement scope. Inquire for details.</p>
+          <div style="margin-top:24px;">
+            <a href="#contact-form" class="btn-primary">Inquire About a Direct Session →</a>
+          </div>
+        </div>
+        <div>
+          <div class="tier-visual on-light">
+            <div class="tier-visual-title dark">Session Formats</div>
+            <div class="format-grid">
+              <div class="format-item light-bg">
+                <div class="format-icon">🏢</div>
+                <div class="format-label dark">Half-Day Onsite</div>
+                <div class="format-sub dark">4 hours · Your location</div>
+              </div>
+              <div class="format-item light-bg">
+                <div class="format-icon">🏛️</div>
+                <div class="format-label dark">Full-Day Onsite</div>
+                <div class="format-sub dark">8 hours · Your location</div>
+              </div>
+              <div class="format-item light-bg">
+                <div class="format-icon">💻</div>
+                <div class="format-label dark">Half-Day Virtual</div>
+                <div class="format-sub dark">4 hours · Video conference</div>
+              </div>
+              <div class="format-item light-bg">
+                <div class="format-icon">🎯</div>
+                <div class="format-label dark">Full-Day Virtual</div>
+                <div class="format-sub dark">8 hours · Video conference</div>
+              </div>
+            </div>
+            <div style="margin-top:20px;padding:14px;background:var(--gray-50);border-radius:8px;border-left:3px solid var(--gold);">
+              <p style="font-size:0.8rem;color:var(--gray-500);line-height:1.65;">
+                <strong style="color:var(--navy);">Common topics:</strong> M&amp;A strategy, PE negotiations, post-acquisition integration, AI governance, organizational transformation, physician leadership, strategic planning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIER 3: RETAINED ADVISORY ===== -->
+  <section class="engage-section dark" id="retainer">
+    <div class="container">
+      <div class="engage-tier">
+        <div>
+          <div class="tier-eyebrow">Tier 3 · Retained Advisory</div>
+          <h2 class="tier-title light">Retained Advisory Relationship</h2>
+          <p class="tier-desc light">
+            An ongoing strategic advisory relationship for organizations navigating sustained complexity —
+            whether a multi-year M&amp;A process, a post-acquisition integration, an AI transformation,
+            or a period of significant organizational change.
+          </p>
+          <p class="tier-desc light">
+            Retained clients receive priority access, regular strategy sessions, and the continuity of
+            an advisor who understands your organization's history, culture, and strategic context deeply.
+          </p>
+          <ul class="tier-features light">
+            <li>Regular strategy sessions (cadence structured to your needs)</li>
+            <li>Priority access between sessions for emerging issues</li>
+            <li>Board and leadership team advisory support</li>
+            <li>M&amp;A process advisory from evaluation through integration</li>
+            <li>Equity-based engagements available for qualifying situations</li>
+          </ul>
+          <p class="tier-note light">Retained engagements are structured individually. Investment and scope determined through discovery.</p>
+          <div style="margin-top:24px;">
+            <a href="#contact-form" class="btn-primary">Inquire About a Retained Relationship →</a>
+          </div>
+        </div>
+        <div>
+          <div class="tier-visual">
+            <div class="tier-visual-title light">What Retained Clients Receive</div>
+            <div class="retainer-scope">
+              <div class="scope-item">
+                <div class="scope-dot"></div>
+                <div class="scope-text light">Strategic continuity — advisor who knows your organization</div>
+              </div>
+              <div class="scope-item">
+                <div class="scope-dot"></div>
+                <div class="scope-text light">Priority access for time-sensitive decisions</div>
+              </div>
+              <div class="scope-item">
+                <div class="scope-dot"></div>
+                <div class="scope-text light">Board and leadership team advisory support</div>
+              </div>
+              <div class="scope-item">
+                <div class="scope-dot"></div>
+                <div class="scope-text light">M&amp;A process guidance from LOI through integration</div>
+              </div>
+              <div class="scope-item">
+                <div class="scope-dot"></div>
+                <div class="scope-text light">AI strategy and governance advisory</div>
+              </div>
+              <div class="scope-item">
+                <div class="scope-dot"></div>
+                <div class="scope-text light">Equity-based structures for qualifying engagements</div>
+              </div>
+            </div>
+            <div style="margin-top:20px;padding:14px;background:rgba(197,164,82,0.08);border:1px solid rgba(197,164,82,0.2);border-radius:8px;">
+              <p style="font-size:0.8rem;color:rgba(255,255,255,0.65);line-height:1.65;">
+                Saivai Group works with a limited number of retained clients at any given time to ensure
+                the depth of engagement each relationship requires.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUALIFICATION STATEMENT ===== -->
+  <section class="qualification-section">
+    <div class="container">
+      <p class="qual-text">
+        "Saivai Group works with organizations navigating decisions with significant operational or financial consequence."
+      </p>
+      <p class="qual-sub">
+        If that describes your situation, the right next step is a brief discovery conversation —
+        not a proposal, not a pitch. Just a direct conversation about where you are and whether
+        there is a fit.
+      </p>
+      <a href="#contact-form" class="btn-primary">Begin the Conversation →</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM ===== -->
+  <section class="engage-contact" id="contact-form">
+    <div class="container">
+      <div class="engage-contact-inner">
+        <div>
+          <p style="font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Get Started</p>
+          <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:700;color:var(--navy);margin-bottom:16px;">Begin the Conversation</h2>
+          <p style="font-size:0.95rem;color:var(--gray-500);line-height:1.8;margin-bottom:24px;">
+            Share a brief description of your situation and the engagement type you are considering.
+            Anthony reviews all inquiries personally and responds within one business day.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(197,164,82,0.12);border:1px solid rgba(197,164,82,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">1</div>
+              <div>
+                <p style="font-size:0.875rem;font-weight:600;color:var(--navy);margin-bottom:3px;">Submit your inquiry</p>
+                <p style="font-size:0.82rem;color:var(--gray-500);">Brief description of your situation and engagement interest</p>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(197,164,82,0.12);border:1px solid rgba(197,164,82,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">2</div>
+              <div>
+                <p style="font-size:0.875rem;font-weight:600;color:var(--navy);margin-bottom:3px;">Discovery conversation</p>
+                <p style="font-size:0.82rem;color:var(--gray-500);">A brief call to understand your situation and confirm fit</p>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(197,164,82,0.12);border:1px solid rgba(197,164,82,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:0.9rem;">3</div>
+              <div>
+                <p style="font-size:0.875rem;font-weight:600;color:var(--navy);margin-bottom:3px;">Engagement structured</p>
+                <p style="font-size:0.82rem;color:var(--gray-500);">Scope and investment tailored to your specific situation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form id="engageContactForm" onsubmit="handleEngageSubmit(event)">
+            <div class="contact-form-group">
+              <label class="contact-form-label" for="engageName">Full Name *</label>
+              <input type="text" id="engageName" class="contact-form-input" placeholder="Your full name" required />
+            </div>
+            <div class="contact-form-group">
+              <label class="contact-form-label" for="engageOrg">Organization *</label>
+              <input type="text" id="engageOrg" class="contact-form-input" placeholder="Organization name" required />
+            </div>
+            <div class="contact-form-group">
+              <label class="contact-form-label" for="engageRole">Your Role *</label>
+              <input type="text" id="engageRole" class="contact-form-input" placeholder="CEO, CMO, Board Member, etc." required />
+            </div>
+            <div class="contact-form-group">
+              <label class="contact-form-label" for="engageEmail">Email Address *</label>
+              <input type="email" id="engageEmail" class="contact-form-input" placeholder="your@organization.com" required />
+            </div>
+            <div class="contact-form-group">
+              <label class="contact-form-label" for="engageType">Engagement Interest *</label>
+              <select id="engageType" class="contact-form-select" required>
+                <option value="">Select engagement type</option>
+                <option value="async">Async Advisory</option>
+                <option value="half-day">Half-Day Direct Advisory Session</option>
+                <option value="full-day">Full-Day Direct Advisory Session</option>
+                <option value="retainer">Retained Advisory Relationship</option>
+                <option value="ai-advisory">AI Advisory / Fractional CAIO</option>
+                <option value="unsure">Not sure — I'd like to discuss</option>
+              </select>
+            </div>
+            <div class="contact-form-group">
+              <label class="contact-form-label" for="engageSituation">Brief Description of Your Situation *</label>
+              <textarea id="engageSituation" class="contact-form-textarea" placeholder="What is the decision or challenge you are navigating? What outcome are you trying to achieve?" required></textarea>
+            </div>
+            <button type="submit" class="contact-form-submit">Submit Inquiry →</button>
+            <div id="engageFormSuccess" style="display:none;margin-top:16px;padding:14px;background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.3);border-radius:8px;">
+              <p style="font-size:0.875rem;color:#4ade80;font-weight:600;">Thank you — your inquiry has been received. Anthony will respond within one business day.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <img
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310419663028641299/oLBbncMXKbdUTNHq.png"
+            alt="Saivai Group"
+            class="footer-logo"
+          />
+          <p class="footer-tagline">Healthcare Strategy · AI Advisory · M&amp;A</p>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:8px;">
+            © 2026 Saivai Group LLC. All rights reserved.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <div class="footer-col-title">Engagement Options</div>
+            <a href="#async" class="footer-link">Async Advisory</a>
+            <a href="#direct" class="footer-link">Direct Advisory Sessions</a>
+            <a href="#retainer" class="footer-link">Retained Advisory</a>
+            <a href="#contact-form" class="footer-link">Begin the Conversation</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Main Site</div>
+            <a href="index.html#services" class="footer-link">All Services</a>
+            <a href="index.html#about" class="footer-link">About Anthony</a>
+            <a href="ai-advisory.html" class="footer-link">AI Advisory</a>
+            <a href="index.html#contact" class="footer-link">Contact</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Connect</div>
+            <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+            <a href="mailto:anthony@saivaigroup.com" class="footer-link">Email Anthony</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleEngageSubmit(e) {
+      e.preventDefault();
+      document.getElementById('engageContactForm').style.opacity = '0.5';
+      document.getElementById('engageContactForm').style.pointerEvents = 'none';
+      document.getElementById('engageFormSuccess').style.display = 'block';
+      // In production, this would POST to a form handler / CRM
+    }
+  </script>
+</body>
+</html>
