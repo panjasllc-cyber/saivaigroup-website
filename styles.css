@@ -1098,3 +1098,113 @@ section, header, footer, nav, .container {
   .async-tier-title { font-size: 0.95rem; }
   .section-headline { font-size: 1.75rem; }
 }
+
+/* ============================================================
+   BOOK — The Operator's Thesis
+   ============================================================ */
+.book-section {
+  background: var(--white);
+  padding: 0 0 72px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.book-card {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 28px 44px;
+  align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 40px 28px 36px;
+  position: relative;
+}
+.book-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  bottom: 22px;
+  width: 3px;
+  background: var(--gold);
+  border-radius: 0 2px 2px 0;
+}
+.book-cover-link {
+  display: block;
+  line-height: 0;
+}
+.book-cover-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 12px 28px rgba(13, 27, 62, 0.22);
+}
+.book-copy { min-width: 0; }
+.book-copy .section-eyebrow { margin-bottom: 8px; }
+.book-copy .section-headline {
+  font-size: clamp(1.75rem, 2.4vw, 2.25rem);
+  margin-bottom: 12px;
+}
+.book-subtitle {
+  font-size: 1.05rem;
+  color: var(--gray-500);
+  line-height: 1.65;
+  max-width: 38rem;
+  margin-bottom: 12px;
+}
+.book-byline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 22px;
+}
+.book-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.book-paperback {
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.book-format-link {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--navy-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.book-format-link:hover { color: var(--gold); }
+.book-cover-link:focus-visible,
+.book-links a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  .book-section { padding-bottom: 48px; }
+  .book-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 22px;
+    padding: 28px 20px 28px 24px;
+  }
+  .book-cover-link { width: 188px; }
+  .book-copy { width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .book-card { padding: 24px 16px 26px 20px; }
+  .book-links .book-paperback {
+    padding: 14px 18px;
+    font-size: 0.9rem;
+  }
+}
