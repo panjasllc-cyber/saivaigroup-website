@@ -630,6 +630,44 @@ h2 {
   .book-subtitle { font-size: var(--hero-subtitle); }
 }
 
+/* Praise */
+.praise-note {
+  max-width: var(--measure);
+  margin-top: var(--space-5);
+  color: var(--text-muted);
+  font-size: var(--ui-size);
+  font-style: italic;
+}
+.praise-list { margin-top: var(--space-7); }
+.praise {
+  break-inside: avoid;
+  margin: 0 0 var(--space-7);
+  padding-top: var(--space-5);
+  border-top: var(--hairline) solid var(--rule-strong);
+}
+.praise blockquote { margin: 0; max-width: var(--measure); }
+.praise blockquote p { font-size: var(--step-0); line-height: var(--lh-body); color: var(--text); }
+.praise blockquote p + p { margin-top: var(--space-4); }
+.praise figcaption { margin-top: var(--space-4); max-width: var(--measure); }
+.praise-by, .praise-disclosure { display: block; }
+.praise-by {
+  max-width: var(--measure);
+  color: var(--text-muted);
+  font-size: var(--ui-size);
+  line-height: 1.5;
+  letter-spacing: .02em;
+}
+/* Disclosure: same size as the attribution, full text colour, directly beneath it. */
+.praise-disclosure {
+  margin-top: var(--space-1);
+  color: var(--text);
+  font-size: var(--ui-size);
+  line-height: 1.5;
+}
+@media (min-width: 1024px) {
+  .praise-list { column-count: 2; column-gap: var(--space-8); }
+}
+
 /* Author */
 .closing-links { display: flex; flex-wrap: wrap; gap: 0 var(--space-5); }
 .closing {
