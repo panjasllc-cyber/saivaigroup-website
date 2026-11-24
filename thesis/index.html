@@ -403,6 +403,42 @@
     </div>
   </section>
 
+  <section id="updates" class="band band-paper-2" aria-labelledby="updates-title">
+    <div class="wrap">
+      <form id="signup" class="signup" action="https://thesis-signup.pages.dev/api/subscribe" method="post" data-endpoint="https://thesis-signup.pages.dev/api/subscribe" novalidate>
+        <div class="signup-intro">
+          <h2 id="updates-title">Want updates? (optional)</h2>
+          <p class="signup-lede">The Toolkit is free either way. If you’d like occasional emails from Saivai Group, tell us which kinds:</p>
+          <fieldset class="topics">
+            <legend class="sc">Topics</legend>
+            <label class="check"><input type="checkbox" name="topics" value="content"><span>New content</span></label>
+            <label class="check"><input type="checkbox" name="topics" value="newsletter"><span>Newsletter</span></label>
+            <label class="check"><input type="checkbox" name="topics" value="training"><span>Training and workshops</span></label>
+            <label class="check"><input type="checkbox" name="topics" value="information"><span>Information and announcements</span></label>
+          </fieldset>
+          <p class="signup-fine">We’ll email you only about the topics you tick. Unsubscribe anytime with the link in any email. We don’t sell or share your information. See our <a href="privacy.html">privacy notice</a>.</p>
+        </div>
+        <div class="signup-fields">
+          <div class="field">
+            <label for="signup-email">Email</label>
+            <input type="email" name="email" id="signup-email" autocomplete="email" required maxlength="254">
+          </div>
+          <div class="field">
+            <label for="signup-first">First name (optional)</label>
+            <input type="text" name="first_name" id="signup-first" autocomplete="given-name" maxlength="60">
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="signup-company">Company</label>
+            <input type="text" name="company" id="signup-company" tabindex="-1" autocomplete="off">
+          </div>
+          <p class="signup-note">Please don’t send health or patient information here.</p>
+          <button type="submit" class="btn btn-outline">Sign up</button>
+          <p class="signup-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <section id="author" class="band band-paper" aria-labelledby="author-title">
     <div class="wrap">
       <h2 id="author-title">About the author</h2>

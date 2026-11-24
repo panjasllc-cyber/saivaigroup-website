@@ -630,6 +630,87 @@ h2 {
   .book-subtitle { font-size: var(--hero-subtitle); }
 }
 
+/* Updates sign-up */
+.signup {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-7);
+}
+@media (min-width: 1024px) {
+  .signup {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: var(--space-9);
+    align-items: start;
+  }
+}
+.signup-lede { max-width: var(--measure); margin-top: var(--space-5); }
+.topics {
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.topics legend {
+  padding: 0;
+  margin-bottom: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--step-0);
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: var(--tap);
+  cursor: pointer;
+}
+.check input {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.signup-fine { max-width: var(--measure); margin-top: var(--space-4); color: var(--text-muted); font-size: var(--step--1); line-height: 1.6; }
+.signup-fields { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+@media (min-width: 1024px) {
+  .signup-fields { padding-top: var(--space-3); }
+}
+.field { display: flex; flex-direction: column; gap: var(--space-2); width: 100%; max-width: 30rem; }
+.field label { font-weight: 500; cursor: pointer; }
+.field input {
+  width: 100%;
+  min-height: var(--btn-h);
+  padding: var(--space-2) var(--space-3);
+  border: var(--hairline) solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--text);
+  font: inherit;
+}
+.field input:hover { border-color: var(--accent); }
+.field input[aria-invalid="true"] { border-color: var(--accent); border-width: var(--focus-width); }
+.hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.signup-note { color: var(--text-muted); font-size: var(--step--1); font-style: italic; }
+.btn-outline {
+  border-color: var(--accent);
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+.btn-outline:disabled { opacity: .6; cursor: progress; transform: none; }
+.signup-status { color: var(--text); max-width: 30rem; }
+.signup-status.is-error {
+  padding-left: var(--space-3);
+  border-left: var(--focus-width) solid var(--accent);
+}
+
 /* Author */
 .closing-links { display: flex; flex-wrap: wrap; gap: 0 var(--space-5); }
 .closing {
