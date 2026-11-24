@@ -3,98 +3,436 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className += ' js';</script>
 <title>Reader Resources — The Operator’s Thesis</title>
 <meta name="description" content="Editable versions of the seventeen instruments in The Operator’s Thesis, worked examples, and bonus material. Free; no membership required.">
-<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://saivaigroup.com/thesis/">
-<style>
-  :root { --ink:#2b241c; --paper:#f6f1e8; --panel:#ffffff; --accent:#5b4a38; --rule:#d8cfc2; --muted:#6b6259; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.55 Georgia, "Times New Roman", serif; }
-  header { background:var(--ink); color:#f3ece0; padding:40px 16px 32px; }
-  .wrap { max-width:880px; margin:0 auto; padding:0 16px; }
-  header h1 { font-size:2rem; margin:0 0 6px; font-weight:normal; letter-spacing:.01em; }
-  header p { margin:0; color:#d9cfbf; }
-  header .kicker { text-transform:uppercase; letter-spacing:.18em; font-size:.75rem; color:#c9bda8; margin-bottom:14px; }
-  main { padding:28px 16px 48px; }
-  h2 { font-size:1.25rem; font-weight:normal; color:var(--accent); border-bottom:1px solid var(--rule); padding-bottom:6px; margin:36px 0 14px; }
-  .promise { background:var(--panel); border:1px solid var(--rule); padding:16px 18px; margin:0 0 8px; }
-  ul.files { list-style:none; padding:0; margin:0; }
-  ul.files li { display:flex; flex-wrap:wrap; gap:6px 14px; align-items:baseline; padding:10px 0; border-bottom:1px solid var(--rule); }
-  ul.files li .name { flex:1 1 320px; }
-  ul.files li .ch { color:var(--muted); font-size:.9rem; }
-  a { color:var(--accent); }
-  a.dl { text-decoration:none; border:1px solid var(--accent); padding:3px 10px; border-radius:3px; font-size:.9rem; white-space:nowrap; }
-  a.dl:hover, a.dl:focus { background:var(--accent); color:#fff; outline:none; }
-  .forth { color:var(--muted); font-style:italic; }
-  form { background:var(--panel); border:1px solid var(--rule); padding:16px 18px; }
-  label { display:block; margin:8px 0 4px; }
-  input[type=email], input[type=text] { width:100%; max-width:420px; padding:8px; font:inherit; border:1px solid #bbb; border-radius:3px; }
-  button { margin-top:12px; padding:9px 16px; font:inherit; background:var(--accent); color:#fff; border:0; border-radius:3px; cursor:pointer; }
-  .fine { font-size:.85rem; color:var(--muted); }
-  footer { border-top:1px solid var(--rule); padding:20px 16px 40px; font-size:.85rem; color:var(--muted); }
-  .skip { position:absolute; left:-9999px; }
-  .skip:focus { position:static; }
-  @media (max-width:600px){ header h1{font-size:1.6rem;} body{font-size:16px;} }
-</style>
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#181410">
+<link rel="preload" href="assets/fonts/cormorant-garamond-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="book">
+<meta property="og:title" content="Reader Resources — The Operator’s Thesis">
+<meta property="og:description" content="Editable versions of the seventeen instruments in The Operator’s Thesis, worked examples, and bonus material. Free; no membership required.">
+<meta property="og:url" content="https://saivaigroup.com/thesis/">
+<meta property="og:image" content="https://saivaigroup.com/thesis/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of The Operator’s Thesis by Anthony W. Russell, MD MBA MPH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reader Resources — The Operator’s Thesis">
+<meta name="twitter:description" content="Editable versions of the seventeen instruments in The Operator’s Thesis, worked examples, and bonus material. Free; no membership required.">
+<meta name="twitter:image" content="https://saivaigroup.com/thesis/assets/og-image.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Operator’s Thesis",
+  "alternativeHeadline": "How Healthcare Really Buys AI, and How to Recognize the Companies Built to Survive It",
+  "author": {
+    "@type": "Person",
+    "name": "Anthony W. Russell",
+    "honorificSuffix": "MD, MBA, MPH"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Saivai Group"
+  },
+  "workExample": [
+    { "@type": "Book", "name": "Hardcover", "bookFormat": "https://schema.org/Hardcover", "url": "https://www.amazon.com/dp/B0HSH8BMZ3" },
+    { "@type": "Book", "name": "Paperback", "bookFormat": "https://schema.org/Paperback", "url": "https://www.amazon.com/dp/B0HRJBNB83" },
+    { "@type": "Book", "name": "Kindle", "bookFormat": "https://schema.org/EBook", "url": "https://www.amazon.com/dp/B0HPJN9F8J" }
+  ]
+}
+</script>
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#instruments">Skip to the instruments</a>
-<header>
-  <div class="wrap">
-    <div class="kicker">Reader Resources</div>
-    <h1>The Operator’s Thesis</h1>
-    <p>How Healthcare Really Buys AI, and How to Recognize the Companies Built to Survive It · Anthony W. Russell, MD, MBA, MPH</p>
+
+<header class="bar">
+  <div class="bar-inner">
+    <a class="wordmark" href="#top">The Operator’s Thesis</a>
+    <nav class="bar-nav" aria-label="Sections">
+      <ul role="list">
+        <li><a href="#instruments">Instruments</a></li>
+        <li><a href="#examples">Worked examples</a></li>
+        <li><a href="#book">The book</a></li>
+        <li><a href="#author">Author</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-cream btn-bar" href="resources/operators-thesis-toolkit.zip" download aria-label="Download the entire Toolkit (.zip)"><span><span class="bar-long">Download the entire </span>Toolkit<span class="bar-ext"> (.zip)</span></span></a>
   </div>
 </header>
-<main>
-  <div class="wrap">
-    <p class="promise">The instruments in the book appear in Appendix A in full; the book is complete as printed. Their living versions are here: editable worksheets for all seventeen instruments, worked examples, and bonus material as this market evolves. <strong>They are free, and no membership is required.</strong> Download what you need. Questions or corrections are welcome at <a href="mailto:arussell@saivaigroup.com">arussell@saivaigroup.com</a>.</p>
 
-    <h2 id="instruments">The Operator’s Toolkit — editable instruments</h2>
-    <p>Each file is the printed instrument, text-identical to the book, in an editable Word document and a PDF. Fill them in, photocopy them, argue over them in conference rooms.</p>
-    <ul class="files">
-      <li><span class="name">The whole Toolkit — all seventeen instruments and the Small-System Start</span><a class="dl" href="resources/The_Operators_Toolkit_All_17_Instruments.docx">Word</a><a class="dl" href="resources/The_Operators_Toolkit_All_17_Instruments.pdf">PDF</a></li>
-      <li><span class="name">Before the Instruments: The Small-System Start <span class="ch">(for smaller hospitals, medical groups, and clinics)</span></span><a class="dl" href="resources/00_Small_System_Start.docx">Word</a><a class="dl" href="resources/00_Small_System_Start.pdf">PDF</a></li>
-      <li><span class="name">Instrument 1 — The Buyer Stack Worksheet <span class="ch">(Chapters 4–5)</span></span><a class="dl" href="resources/Instrument_01_The_Buyer_Stack_Worksheet.docx">Word</a><a class="dl" href="resources/Instrument_01_The_Buyer_Stack_Worksheet.pdf">PDF</a></li>
-      <li><span class="name">Instrument 2 — The Three Fits Scorecard <span class="ch">(Chapter 10)</span></span><a class="dl" href="resources/Instrument_02_The_Three_Fits_Scorecard.docx">Word</a><a class="dl" href="resources/Instrument_02_The_Three_Fits_Scorecard.pdf">PDF</a></li>
-      <li><span class="name">Instrument 3 — The Price-Plus-Burden Worksheet <span class="ch">(Chapter 6)</span></span><a class="dl" href="resources/Instrument_03_The_Price_Plus_Burden_Worksheet.docx">Word</a><a class="dl" href="resources/Instrument_03_The_Price_Plus_Burden_Worksheet.pdf">PDF</a></li>
-      <li><span class="name">Instrument 4 — Diligence Questions by Stage <span class="ch">(Chapters 11–12)</span></span><a class="dl" href="resources/Instrument_04_Diligence_Questions_by_Stage.docx">Word</a><a class="dl" href="resources/Instrument_04_Diligence_Questions_by_Stage.pdf">PDF</a></li>
-      <li><span class="name">Instrument 5 — Sponsor / Signer / Implementer / User Map <span class="ch">(Chapter 4)</span></span><a class="dl" href="resources/Instrument_05_Sponsor_Signer_Implementer_User_Map.docx">Word</a><a class="dl" href="resources/Instrument_05_Sponsor_Signer_Implementer_User_Map.pdf">PDF</a></li>
-      <li><span class="name">Instrument 6 — Safety Language vs. Safety Architecture Checklist <span class="ch">(Chapter 8)</span></span><a class="dl" href="resources/Instrument_06_Safety_Language_vs_Safety_Architecture_Checklist.docx">Word</a><a class="dl" href="resources/Instrument_06_Safety_Language_vs_Safety_Architecture_Checklist.pdf">PDF</a></li>
-      <li><span class="name">Instrument 7 — Judgment Allocation Map <span class="ch">(Chapter 7)</span></span><a class="dl" href="resources/Instrument_07_Judgment_Allocation_Map.docx">Word</a><a class="dl" href="resources/Instrument_07_Judgment_Allocation_Map.pdf">PDF</a></li>
-      <li><span class="name">Instrument 8 — Pilot-to-Platform Readiness Checklist <span class="ch">(Chapter 12)</span></span><a class="dl" href="resources/Instrument_08_Pilot_to_Platform_Readiness_Checklist.docx">Word</a><a class="dl" href="resources/Instrument_08_Pilot_to_Platform_Readiness_Checklist.pdf">PDF</a></li>
-      <li><span class="name">Instrument 9 — Founder Red Flags <span class="ch">(Chapters 11–12, 15)</span></span><a class="dl" href="resources/Instrument_09_Founder_Red_Flags.docx">Word</a><a class="dl" href="resources/Instrument_09_Founder_Red_Flags.pdf">PDF</a></li>
-      <li><span class="name">Instrument 10 — Buyer Red Flags <span class="ch">(Chapters 3, 4, 9)</span></span><a class="dl" href="resources/Instrument_10_Buyer_Red_Flags.docx">Word</a><a class="dl" href="resources/Instrument_10_Buyer_Red_Flags.pdf">PDF</a></li>
-      <li><span class="name">Instrument 11 — Renewal Readiness Questions <span class="ch">(Chapters 6, 11)</span></span><a class="dl" href="resources/Instrument_11_Renewal_Readiness_Questions.docx">Word</a><a class="dl" href="resources/Instrument_11_Renewal_Readiness_Questions.pdf">PDF</a></li>
-      <li><span class="name">Instrument 12 — The Healthcare AI Company Quality Scorecard <span class="ch">(Chapter 20)</span></span><a class="dl" href="resources/Instrument_12_The_Healthcare_AI_Company_Quality_Scorecard.docx">Word</a><a class="dl" href="resources/Instrument_12_The_Healthcare_AI_Company_Quality_Scorecard.pdf">PDF</a></li>
-      <li><span class="name">Instrument 13 — The AI Team Criteria Checklist <span class="ch">(Chapter 13)</span></span><a class="dl" href="resources/Instrument_13_The_AI_Team_Criteria_Checklist.docx">Word</a><a class="dl" href="resources/Instrument_13_The_AI_Team_Criteria_Checklist.pdf">PDF</a></li>
-      <li><span class="name">Instrument 14 — The Process-Fit Worksheet <span class="ch">(Chapter 14)</span></span><a class="dl" href="resources/Instrument_14_The_Process_Fit_Worksheet.docx">Word</a><a class="dl" href="resources/Instrument_14_The_Process_Fit_Worksheet.pdf">PDF</a></li>
-      <li><span class="name">Instrument 15 — The Product Differentiation Scorecard <span class="ch">(Chapter 15)</span></span><a class="dl" href="resources/Instrument_15_The_Product_Differentiation_Scorecard.docx">Word</a><a class="dl" href="resources/Instrument_15_The_Product_Differentiation_Scorecard.pdf">PDF</a></li>
-      <li><span class="name">Instrument 16 — The Change Readiness Checklist (for Buyers) <span class="ch">(Chapter 16)</span></span><a class="dl" href="resources/Instrument_16_The_Change_Readiness_Checklist_for_Buyers.docx">Word</a><a class="dl" href="resources/Instrument_16_The_Change_Readiness_Checklist_for_Buyers.pdf">PDF</a></li>
-      <li><span class="name">Instrument 17 — The Pilot-System Selection Checklist (for Vendors) <span class="ch">(Chapter 16)</span></span><a class="dl" href="resources/Instrument_17_The_Pilot_System_Selection_Checklist_for_Vendors.docx">Word</a><a class="dl" href="resources/Instrument_17_The_Pilot_System_Selection_Checklist_for_Vendors.pdf">PDF</a></li>
-    </ul>
+<main id="main">
 
-    <h2 id="examples">Worked examples</h2>
-    <p>Two worked examples, filled in on the book’s instruments: the Price-Plus-Burden Worksheet for an ambient-documentation purchase (Instrument 3, with Instruments 6 and 8), and the Buyer Stack Worksheet for a pilot that stalled (Instrument 1, with Instruments 5, 6 and 8). Both are hypothetical composites with illustrative figures. Word · PDF for each.</p>
-    <ul class="files">
-      <li><span class="name">Worked example 1 — Price-Plus-Burden, ambient documentation</span> <a class="dl" href="resources/worked-examples/Worked_Example_1_Price_Plus_Burden_Ambient_Documentation.docx">Word</a> <a class="dl" href="resources/worked-examples/Worked_Example_1_Price_Plus_Burden_Ambient_Documentation.pdf">PDF</a></li>
-      <li><span class="name">Worked example 2 — Buyer Stack, a pilot that stalled</span> <a class="dl" href="resources/worked-examples/Worked_Example_2_Buyer_Stack_Stalled_Pilot.docx">Word</a> <a class="dl" href="resources/worked-examples/Worked_Example_2_Buyer_Stack_Stalled_Pilot.pdf">PDF</a></li>
-    </ul>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="frame" aria-hidden="true">
+      <span class="fl fl-o fl-h fl-t"></span>
+      <span class="fl fl-o fl-h fl-b"></span>
+      <span class="fl fl-o fl-v fl-l"></span>
+      <span class="fl fl-o fl-v fl-r"></span>
+      <span class="fl fl-i fl-h fl-t"></span>
+      <span class="fl fl-i fl-h fl-b"></span>
+      <span class="fl fl-i fl-v fl-l"></span>
+      <span class="fl fl-i fl-v fl-r"></span>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="kicker sc rise" style="--i:0">Reader resources</p>
+        <h1 id="hero-title" class="rise" style="--i:1">The Operator’s Thesis</h1>
+        <p class="hero-subtitle rise" style="--i:2">How Healthcare Really Buys AI, and How to Recognize the Companies Built to Survive It</p>
+        <div class="ornament rise" style="--i:3" aria-hidden="true"><span></span></div>
+        <p class="cover-line rise" style="--i:3">The demo is not the deal.</p>
+        <p class="hero-sub rise" style="--i:4">Editable versions of the seventeen instruments in The Operator’s Thesis, worked examples, and bonus material. Free; no membership required.</p>
+        <div class="hero-actions rise" style="--i:5">
+          <a class="btn btn-cream btn-primary" href="resources/operators-thesis-toolkit.zip" download>
+            <span class="btn-main">Download the entire Toolkit (.zip)</span>
+            <span class="btn-note">ZIP · 1.2 MB · PDF + Word, with worked examples</span>
+          </a>
+          <div class="hero-links">
+            <a class="text-link" href="resources/The_Operators_Toolkit_All_17_Instruments.pdf">Combined PDF</a>
+            <a class="text-link" href="resources/The_Operators_Toolkit_All_17_Instruments.docx">Word version</a>
+            <a class="text-link text-link-quiet" href="https://www.amazon.com/dp/B0HSH8BMZ3" target="_blank" rel="noopener">Get the hardcover<svg class="arrow" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.25"/></svg><span class="vh"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+        <p class="byline sc rise" style="--i:5">Anthony W. Russell, MD, MBA, MPH</p>
+      </div>
+      <div class="hero-cover">
+        <div class="book">
+          <div class="book-page" aria-hidden="true">
+            <p class="book-page-title">The Operator’s Thesis</p>
+            <p class="book-page-line">The demo is not the deal.</p>
+          </div>
+          <div class="book-glow" aria-hidden="true"></div>
+          <div class="book-cover">
+            <picture>
+              <source type="image/webp" srcset="assets/cover-360.webp 360w, assets/cover-560.webp 560w, assets/cover-840.webp 840w, assets/cover-1120.webp 1120w" sizes="(max-width: 759px) 260px, (max-width: 1400px) 34vw, 476px">
+              <img src="assets/cover-560.jpg" srcset="assets/cover-360.jpg 360w, assets/cover-560.jpg 560w, assets/cover-840.jpg 840w, assets/cover-1120.jpg 1120w" sizes="(max-width: 759px) 260px, (max-width: 1400px) 34vw, 476px" width="1849" height="2560" fetchpriority="high" decoding="async" alt="Cover of The Operator’s Thesis by Anthony W. Russell, MD MBA MPH">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h2 id="bonus">Bonus material</h2>
-    <p class="forth">Forthcoming, as this market evolves. Nothing here yet is a promise of a date.</p>
+  <section id="instruments" class="band band-paper" aria-labelledby="instruments-title">
+    <div class="wrap">
+      <h2 id="instruments-title">The Operator’s Toolkit — editable instruments</h2>
+      <div class="prose">
+        <p>The instruments in the book appear in Appendix A in full; the book is complete as printed. Their living versions are here: editable worksheets for all seventeen instruments, worked examples, and bonus material as this market evolves. <strong>They are free, and no membership is required.</strong> Download what you need. Questions or corrections are welcome at <a href="mailto:arussell@saivaigroup.com">arussell@saivaigroup.com</a>.</p>
+        <p>Each file is the printed instrument, text-identical to the book, in an editable Word document and a PDF. Fill them in, photocopy them, argue over them in conference rooms.</p>
+      </div>
 
+      <div class="featured">
+        <h3 class="featured-name">The whole Toolkit — all seventeen instruments and the Small-System Start</h3>
+        <div class="files">
+          <a class="fbtn fbtn-lg fbtn-fill" href="resources/operators-thesis-toolkit.zip" download aria-label="The whole Toolkit — ZIP, PDF and Word">ZIP</a>
+          <a class="fbtn fbtn-lg" href="resources/The_Operators_Toolkit_All_17_Instruments.docx" aria-label="The whole Toolkit — Word">Word</a>
+          <a class="fbtn fbtn-lg" href="resources/The_Operators_Toolkit_All_17_Instruments.pdf" aria-label="The whole Toolkit — PDF">PDF</a>
+        </div>
+      </div>
 
-    <h2 id="author">About the author</h2>
-    <p>Anthony W. Russell, MD, MBA, MPH, is a physician executive, a pediatrician and clinical informaticist, who has spent more than two decades inside the rooms where healthcare technology lives or dies. To follow the work or connect: <a href="http://linkedin.com/in/anthonywrussell">linkedin.com/in/anthonywrussell</a>.</p>
-  </div>
+      <ol class="index" role="list">
+        <li class="row">
+          <span class="num" aria-hidden="true">00</span>
+          <div class="row-body">
+            <h3 class="row-name">Before the Instruments: The Small-System Start</h3>
+            <p class="row-ref sc">(for smaller hospitals, medical groups, and clinics)</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/00_Small_System_Start.docx" aria-label="Before the Instruments, The Small-System Start — Word">Word</a>
+            <a class="fbtn" href="resources/00_Small_System_Start.pdf" aria-label="Before the Instruments, The Small-System Start — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">01</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 1: </span>The Buyer Stack Worksheet</h3>
+            <p class="row-ref sc">Chapters 4–5</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_01_The_Buyer_Stack_Worksheet.docx" aria-label="Instrument 1, The Buyer Stack Worksheet — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_01_The_Buyer_Stack_Worksheet.pdf" aria-label="Instrument 1, The Buyer Stack Worksheet — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">02</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 2: </span>The Three Fits Scorecard</h3>
+            <p class="row-ref sc">Chapter 10</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_02_The_Three_Fits_Scorecard.docx" aria-label="Instrument 2, The Three Fits Scorecard — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_02_The_Three_Fits_Scorecard.pdf" aria-label="Instrument 2, The Three Fits Scorecard — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">03</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 3: </span>The Price-Plus-Burden Worksheet</h3>
+            <p class="row-ref sc">Chapter 6</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_03_The_Price_Plus_Burden_Worksheet.docx" aria-label="Instrument 3, The Price-Plus-Burden Worksheet — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_03_The_Price_Plus_Burden_Worksheet.pdf" aria-label="Instrument 3, The Price-Plus-Burden Worksheet — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">04</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 4: </span>Diligence Questions by Stage</h3>
+            <p class="row-ref sc">Chapters 11–12</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_04_Diligence_Questions_by_Stage.docx" aria-label="Instrument 4, Diligence Questions by Stage — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_04_Diligence_Questions_by_Stage.pdf" aria-label="Instrument 4, Diligence Questions by Stage — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">05</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 5: </span>Sponsor / Signer / Implementer / User Map</h3>
+            <p class="row-ref sc">Chapter 4</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_05_Sponsor_Signer_Implementer_User_Map.docx" aria-label="Instrument 5, Sponsor / Signer / Implementer / User Map — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_05_Sponsor_Signer_Implementer_User_Map.pdf" aria-label="Instrument 5, Sponsor / Signer / Implementer / User Map — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">06</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 6: </span>Safety Language vs. Safety Architecture Checklist</h3>
+            <p class="row-ref sc">Chapter 8</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_06_Safety_Language_vs_Safety_Architecture_Checklist.docx" aria-label="Instrument 6, Safety Language vs. Safety Architecture Checklist — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_06_Safety_Language_vs_Safety_Architecture_Checklist.pdf" aria-label="Instrument 6, Safety Language vs. Safety Architecture Checklist — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">07</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 7: </span>Judgment Allocation Map</h3>
+            <p class="row-ref sc">Chapter 7</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_07_Judgment_Allocation_Map.docx" aria-label="Instrument 7, Judgment Allocation Map — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_07_Judgment_Allocation_Map.pdf" aria-label="Instrument 7, Judgment Allocation Map — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">08</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 8: </span>Pilot-to-Platform Readiness Checklist</h3>
+            <p class="row-ref sc">Chapter 12</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_08_Pilot_to_Platform_Readiness_Checklist.docx" aria-label="Instrument 8, Pilot-to-Platform Readiness Checklist — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_08_Pilot_to_Platform_Readiness_Checklist.pdf" aria-label="Instrument 8, Pilot-to-Platform Readiness Checklist — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">09</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 9: </span>Founder Red Flags</h3>
+            <p class="row-ref sc">Chapters 11–12, 15</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_09_Founder_Red_Flags.docx" aria-label="Instrument 9, Founder Red Flags — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_09_Founder_Red_Flags.pdf" aria-label="Instrument 9, Founder Red Flags — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">10</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 10: </span>Buyer Red Flags</h3>
+            <p class="row-ref sc">Chapters 3, 4, 9</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_10_Buyer_Red_Flags.docx" aria-label="Instrument 10, Buyer Red Flags — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_10_Buyer_Red_Flags.pdf" aria-label="Instrument 10, Buyer Red Flags — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">11</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 11: </span>Renewal Readiness Questions</h3>
+            <p class="row-ref sc">Chapters 6, 11</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_11_Renewal_Readiness_Questions.docx" aria-label="Instrument 11, Renewal Readiness Questions — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_11_Renewal_Readiness_Questions.pdf" aria-label="Instrument 11, Renewal Readiness Questions — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">12</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 12: </span>The Healthcare AI Company Quality Scorecard</h3>
+            <p class="row-ref sc">Chapter 20</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_12_The_Healthcare_AI_Company_Quality_Scorecard.docx" aria-label="Instrument 12, The Healthcare AI Company Quality Scorecard — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_12_The_Healthcare_AI_Company_Quality_Scorecard.pdf" aria-label="Instrument 12, The Healthcare AI Company Quality Scorecard — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">13</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 13: </span>The AI Team Criteria Checklist</h3>
+            <p class="row-ref sc">Chapter 13</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_13_The_AI_Team_Criteria_Checklist.docx" aria-label="Instrument 13, The AI Team Criteria Checklist — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_13_The_AI_Team_Criteria_Checklist.pdf" aria-label="Instrument 13, The AI Team Criteria Checklist — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">14</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 14: </span>The Process-Fit Worksheet</h3>
+            <p class="row-ref sc">Chapter 14</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_14_The_Process_Fit_Worksheet.docx" aria-label="Instrument 14, The Process-Fit Worksheet — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_14_The_Process_Fit_Worksheet.pdf" aria-label="Instrument 14, The Process-Fit Worksheet — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">15</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 15: </span>The Product Differentiation Scorecard</h3>
+            <p class="row-ref sc">Chapter 15</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_15_The_Product_Differentiation_Scorecard.docx" aria-label="Instrument 15, The Product Differentiation Scorecard — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_15_The_Product_Differentiation_Scorecard.pdf" aria-label="Instrument 15, The Product Differentiation Scorecard — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">16</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 16: </span>The Change Readiness Checklist (for Buyers)</h3>
+            <p class="row-ref sc">Chapter 16</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_16_The_Change_Readiness_Checklist_for_Buyers.docx" aria-label="Instrument 16, The Change Readiness Checklist (for Buyers) — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_16_The_Change_Readiness_Checklist_for_Buyers.pdf" aria-label="Instrument 16, The Change Readiness Checklist (for Buyers) — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num" aria-hidden="true">17</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Instrument 17: </span>The Pilot-System Selection Checklist (for Vendors)</h3>
+            <p class="row-ref sc">Chapter 16</p>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/Instrument_17_The_Pilot_System_Selection_Checklist_for_Vendors.docx" aria-label="Instrument 17, The Pilot-System Selection Checklist (for Vendors) — Word">Word</a>
+            <a class="fbtn" href="resources/Instrument_17_The_Pilot_System_Selection_Checklist_for_Vendors.pdf" aria-label="Instrument 17, The Pilot-System Selection Checklist (for Vendors) — PDF">PDF</a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="examples" class="band band-paper-2" aria-labelledby="examples-title">
+    <div class="wrap">
+      <h2 id="examples-title">Worked examples</h2>
+      <div class="prose">
+        <p>Two worked examples, filled in on the book’s instruments: the Price-Plus-Burden Worksheet for an ambient-documentation purchase (Instrument 3, with Instruments 6 and 8), and the Buyer Stack Worksheet for a pilot that stalled (Instrument 1, with Instruments 5, 6 and 8). Both are hypothetical composites with illustrative figures.</p>
+      </div>
+      <ul class="index index-examples" role="list">
+        <li class="row">
+          <span class="num-label sc">Example 1</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Worked example 1 — </span>Price-Plus-Burden, ambient documentation</h3>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/worked-examples/Worked_Example_1_Price_Plus_Burden_Ambient_Documentation.docx" aria-label="Worked example 1, Price-Plus-Burden, ambient documentation — Word">Word</a>
+            <a class="fbtn" href="resources/worked-examples/Worked_Example_1_Price_Plus_Burden_Ambient_Documentation.pdf" aria-label="Worked example 1, Price-Plus-Burden, ambient documentation — PDF">PDF</a>
+          </div>
+        </li>
+        <li class="row">
+          <span class="num-label sc">Example 2</span>
+          <div class="row-body">
+            <h3 class="row-name"><span class="vh">Worked example 2 — </span>Buyer Stack, a pilot that stalled</h3>
+          </div>
+          <div class="files">
+            <a class="fbtn" href="resources/worked-examples/Worked_Example_2_Buyer_Stack_Stalled_Pilot.docx" aria-label="Worked example 2, Buyer Stack, a pilot that stalled — Word">Word</a>
+            <a class="fbtn" href="resources/worked-examples/Worked_Example_2_Buyer_Stack_Stalled_Pilot.pdf" aria-label="Worked example 2, Buyer Stack, a pilot that stalled — PDF">PDF</a>
+          </div>
+        </li>
+      </ul>
+
+      <div id="bonus" class="bonus">
+        <h2 class="h-minor">Bonus material</h2>
+        <p class="bonus-line">Forthcoming, as this market evolves. Nothing here yet is a promise of a date.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="band band-ink" aria-label="The book">
+    <div class="wrap book">
+      <div class="book-cover">
+        <picture>
+          <source type="image/webp" srcset="assets/cover-360.webp 360w, assets/cover-560.webp 560w" sizes="(max-width: 759px) 60vw, 300px">
+          <img src="assets/cover-560.jpg" srcset="assets/cover-360.jpg 360w, assets/cover-560.jpg 560w" sizes="(max-width: 759px) 60vw, 300px" width="1849" height="2560" loading="lazy" decoding="async" alt="Cover of The Operator’s Thesis by Anthony W. Russell, MD MBA MPH">
+        </picture>
+      </div>
+      <div class="book-text">
+        <p class="kicker sc">The book</p>
+        <h2 id="book-title">The Operator’s Thesis</h2>
+        <p class="book-subtitle">How Healthcare Really Buys AI, and How to Recognize the Companies Built to Survive It</p>
+        <p class="byline sc">Anthony W. Russell, MD, MBA, MPH</p>
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <p class="cover-line">The demo is not the deal.</p>
+        <div class="book-buy">
+          <a class="btn btn-outline-ink" href="https://www.amazon.com/dp/B0HSH8BMZ3" target="_blank" rel="noopener">Get the hardcover<svg class="arrow" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.25"/></svg><span class="vh"> (opens in a new tab)</span></a>
+          <p class="book-also">Also in paperback and Kindle.</p>
+          <p class="book-formats">
+            <a class="text-link" href="https://www.amazon.com/dp/B0HRJBNB83" target="_blank" rel="noopener">Paperback<svg class="arrow" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.25"/></svg><span class="vh"> (opens in a new tab)</span></a>
+            <a class="text-link" href="https://www.amazon.com/dp/B0HPJN9F8J" target="_blank" rel="noopener">Kindle<svg class="arrow" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.25"/></svg><span class="vh"> (opens in a new tab)</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="author" class="band band-paper" aria-labelledby="author-title">
+    <div class="wrap">
+      <h2 id="author-title">About the author</h2>
+      <div class="prose">
+        <p>Anthony W. Russell, MD, MBA, MPH, is a physician executive, a pediatrician and clinical informaticist, who has spent more than two decades inside the rooms where healthcare technology lives or dies. To follow the work or connect: <a href="https://www.linkedin.com/in/anthonywrussell" target="_blank" rel="noopener">linkedin.com/in/anthonywrussell<span class="vh"> (opens in a new tab)</span></a></p>
+        <p>Questions or corrections are welcome at <a href="mailto:arussell@saivaigroup.com">arussell@saivaigroup.com</a>.</p>
+      </div>
+      <div class="closing">
+        <a class="btn btn-accent btn-primary" href="resources/operators-thesis-toolkit.zip" download>
+          <span class="btn-main">Download the entire Toolkit (.zip)</span>
+          <span class="btn-note">ZIP · 1.2 MB · PDF + Word, with worked examples</span>
+        </a>
+        <div class="closing-links">
+          <a class="text-link" href="resources/The_Operators_Toolkit_All_17_Instruments.pdf">Combined PDF</a>
+          <a class="text-link" href="resources/The_Operators_Toolkit_All_17_Instruments.docx">Word version</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
-<footer>
+
+<footer class="foot">
   <div class="wrap">
     <p>© 2026 Anthony W. Russell. The instruments are aids to structured thinking based on the author’s operating experience; they are not legal, clinical, compliance, investment, accounting, tax, or consulting advice, and they do not establish a standard of care or guarantee diligence or outcomes. Use them with qualified professionals and your own judgment.</p>
-    <p>Published by Saivai Group. This page is the reader-resource hub named on the last page of the book (saivaigroup.com/thesis). <a href="privacy.html">Privacy notice</a>.</p>
+    <p>Published by Saivai Group. This page is the reader-resource hub named on the last page of the book (saivaigroup.com/thesis).</p>
+    <p class="foot-links"><a href="privacy.html">Privacy notice</a><a href="#top">Back to top</a></p>
   </div>
 </footer>
+
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
